@@ -1,0 +1,2161 @@
+{
+ "protocol": "shifted-window temporal splits on the unified 2581-ortholog benchmark; kNN (cosine, distance-weighted, k=15); PCA/Harmony/scVI retrained per window (scVI frozen protocol, seed 42); I19 = interpolation control (train includes 24hpf, test = same 19hpf cells as E16)",
+ "configs": {
+  "E16": {
+   "train_tps": [
+    "10hpf",
+    "12hpf",
+    "14hpf",
+    "16hpf"
+   ],
+   "test_tps": [
+    "19hpf",
+    "24hpf",
+    "2dpf",
+    "3dpf",
+    "5dpf",
+    "10dpf"
+   ],
+   "train_cutoff_hpf": 16.0,
+   "test_min_hpf": 19.0,
+   "interpolation_control": false,
+   "n_train": 18109,
+   "n_test": 102335,
+   "n_train_clusters": 29,
+   "n_test_clusters": 51,
+   "n_shared_clusters": 29,
+   "majority_lineage": 0.35152196218302634,
+   "majority_cluster_shared": 0.10038710235505288,
+   "models": {
+    "STATE SE-600M": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7099623784628915,
+      "balanced_accuracy": 0.6565145004490625,
+      "macro_f1": 0.582415295660186
+     },
+     "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.06939728812093164,
+      "balanced_accuracy": 0.053116032560304866,
+      "macro_f1": 0.048928336625499294
+     },
+     "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.6730944889881254,
+      "balanced_accuracy": 0.6432112958870113,
+      "macro_f1": 0.5741092202245845
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.3559322033898305,
+      "balanced_accuracy": 0.41658619308156497,
+      "macro_f1": 0.3098450046995173
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6254434131882015,
+      "19hpf": 0.9513476860484827,
+      "24hpf": 0.8977853492333902,
+      "2dpf": 0.670864819479429,
+      "3dpf": 0.7901481778133761,
+      "5dpf": 0.5776203625885461
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7306591097864855,
+       "15": 0.7099623784628915,
+       "30": 0.6883861826354619
+      },
+      "cluster_shared": {
+       "5": 0.0620120672130793,
+       "15": 0.06939728812093164,
+       "30": 0.06971086265435436
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.6584643317245429,
+       0.7661768460705533
+      ],
+      "cluster_shared": [
+       0.05080498449975045,
+       0.08845965615971631
+      ],
+      "lineage_novel": [
+       0.6483699776908062,
+       0.6963714846612511
+      ]
+     }
+    },
+    "TranscriptFormer": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.8644061171642156,
+      "balanced_accuracy": 0.8095299942931998,
+      "macro_f1": 0.7739031754818152
+     },
+     "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.04001859821370645,
+      "balanced_accuracy": 0.030644352006669956,
+      "macro_f1": 0.026072784928635
+     },
+     "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.7975235968740485,
+      "balanced_accuracy": 0.7764899492947219,
+      "macro_f1": 0.7610005333129146
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.46463006191007816,
+      "balanced_accuracy": 0.4846927241264295,
+      "macro_f1": 0.3875245487579658
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.8172894698479032,
+      "19hpf": 0.9777928462451263,
+      "24hpf": 0.9355737958804399,
+      "2dpf": 0.8440870632306401,
+      "3dpf": 0.9160770702620923,
+      "5dpf": 0.805779005082643
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.8671031416426442,
+       "15": 0.8644061171642156,
+       "30": 0.864640641031905
+      },
+      "cluster_shared": {
+       "5": 0.0346770182305746,
+       "15": 0.04001859821370645,
+       "30": 0.04152159339114639
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.8393208632931997,
+       0.8914113515059253
+      ],
+      "cluster_shared": [
+       0.029104389958537893,
+       0.05455107002354561
+      ],
+      "lineage_novel": [
+       0.765059538454072,
+       0.8283974494441169
+      ]
+     }
+    },
+    "Geneformer V1": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7259979479161577,
+      "balanced_accuracy": 0.5999779797342673,
+      "macro_f1": 0.5778497032127446
+     },
+     "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.06324473951687896,
+      "balanced_accuracy": 0.04679535076235346,
+      "macro_f1": 0.04150704772249772
+     },
+     "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.6060083223383741,
+      "balanced_accuracy": 0.6062016700661398,
+      "macro_f1": 0.5477909428731326
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.32172942251091036,
+      "balanced_accuracy": 0.38726256054765396,
+      "macro_f1": 0.2795159632025193
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6312746003207153,
+      "19hpf": 0.9213426004407527,
+      "24hpf": 0.8625522688555056,
+      "2dpf": 0.7096169992895434,
+      "3dpf": 0.8129310728429671,
+      "5dpf": 0.61928202665386
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7169883226657546,
+       "15": 0.7259979479161577,
+       "30": 0.719304245859188
+      },
+      "cluster_shared": {
+       "5": 0.056724551804675505,
+       "15": 0.06324473951687896,
+       "30": 0.06579658744404317
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.683771019275339,
+       0.7731488100840599
+      ],
+      "cluster_shared": [
+       0.045932234604655627,
+       0.08231115918607455
+      ],
+      "lineage_novel": [
+       0.5603786244645892,
+       0.6390748383929884
+      ]
+     }
+    },
+    "PCA-50": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.49678018273318025,
+      "balanced_accuracy": 0.4834111920292762,
+      "macro_f1": 0.48280240545653746
+     },
+     "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.04551155900607686,
+      "balanced_accuracy": 0.04968009507774726,
+      "macro_f1": 0.03230135336780945
+     },
+     "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.3717649446868974,
+      "balanced_accuracy": 0.4080606829333032,
+      "macro_f1": 0.39216312853870494
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.13894245407490105,
+      "balanced_accuracy": 0.19864722342510552,
+      "macro_f1": 0.1646987369163861
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.18718110695369067,
+      "19hpf": 0.9725377182573317,
+      "24hpf": 0.9240359299984513,
+      "2dpf": 0.6055028095330363,
+      "3dpf": 0.49539447336804165,
+      "5dpf": 0.35250330171689276
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.487418771681243,
+       "15": 0.49678018273318025,
+       "30": 0.5213367860458299
+      },
+      "cluster_shared": {
+       "5": 0.0444735191712982,
+       "15": 0.04551155900607686,
+       "30": 0.04625765013732402
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.4021257601821999,
+       0.6045306284065227
+      ],
+      "cluster_shared": [
+       0.03248319020921097,
+       0.0590362300202547
+      ],
+      "lineage_novel": [
+       0.31732462465868855,
+       0.4334761718975782
+      ]
+     }
+    },
+    "Harmony": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7094346997605903,
+      "balanced_accuracy": 0.671489631107486,
+      "macro_f1": 0.5915297796755086
+     },
+     "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.042667762375381155,
+      "balanced_accuracy": 0.03497187762381942,
+      "macro_f1": 0.030178048828612438
+     },
+     "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.5725159849791942,
+      "balanced_accuracy": 0.6118973050077035,
+      "macro_f1": 0.5458001428650292
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.298183294428093,
+      "balanced_accuracy": 0.3918414571469079,
+      "macro_f1": 0.27423030201495985
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.5944895281597745,
+      "19hpf": 0.9655873876928293,
+      "24hpf": 0.9119560167260338,
+      "2dpf": 0.735258024930569,
+      "3dpf": 0.670270991856895,
+      "5dpf": 0.6581822547724817
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7114770117750525,
+       "15": 0.7094346997605903,
+       "30": 0.708955880197391
+      },
+      "cluster_shared": {
+       "5": 0.03999697238381523,
+       "15": 0.042667762375381155,
+       "30": 0.044419454596570145
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.6697072347755343,
+       0.7581484371210182
+      ],
+      "cluster_shared": [
+       0.02992072776539094,
+       0.0566711249661109
+      ],
+      "lineage_novel": [
+       0.5378712955525083,
+       0.6140365662943893
+      ]
+     }
+    },
+    "scVI": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7164117848243514,
+      "balanced_accuracy": 0.7023883721877304,
+      "macro_f1": 0.5856898959239951
+     },
+     "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.041316148007179775,
+      "balanced_accuracy": 0.036198456088714796,
+      "macro_f1": 0.026864450267717586
+     },
+     "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.627423119861971,
+      "balanced_accuracy": 0.6235347068497512,
+      "macro_f1": 0.53656819777513
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.34009946209276365,
+      "balanced_accuracy": 0.3963415474674498,
+      "macro_f1": 0.28234112011550383
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.5625637786092619,
+      "19hpf": 0.9732157992880149,
+      "24hpf": 0.9265912962676165,
+      "2dpf": 0.7289285022282503,
+      "3dpf": 0.811462644061763,
+      "5dpf": 0.580621923400168
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7144085601211707,
+       "15": 0.7164117848243514,
+       "30": 0.7167440269702448
+      },
+      "cluster_shared": {
+       "5": 0.042581259055816265,
+       "15": 0.041316148007179775,
+       "30": 0.04039705023680284
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.656020788249756,
+       0.7826208865858928
+      ],
+      "cluster_shared": [
+       0.03238733790481584,
+       0.05200841525266915
+      ],
+      "lineage_novel": [
+       0.608049231459224,
+       0.6488332382020816
+      ]
+     }
+    },
+    "UCE": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7248351004055309,
+      "balanced_accuracy": 0.635762009887698,
+      "macro_f1": 0.5929571826848885
+     },
+     "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.06134166648645142,
+      "balanced_accuracy": 0.045825197885752365,
+      "macro_f1": 0.04233220232330362
+     },
+     "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.6567542880341013,
+      "balanced_accuracy": 0.6441638108675097,
+      "macro_f1": 0.5761757649977175
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.3600933725768801,
+      "balanced_accuracy": 0.407647251912442,
+      "macro_f1": 0.3032504072339
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.640215753923903,
+      "19hpf": 0.9332090184777081,
+      "24hpf": 0.8797429146662537,
+      "2dpf": 0.7019311502938707,
+      "3dpf": 0.7674542784674944,
+      "5dpf": 0.6411333893624684
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7176137196462599,
+       "15": 0.7248351004055309,
+       "30": 0.7222553378609469
+      },
+      "cluster_shared": {
+       "5": 0.0576977141497805,
+       "15": 0.06134166648645142,
+       "30": 0.0629852295581843
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.686946561757951,
+       0.7683319180486091
+      ],
+      "cluster_shared": [
+       0.04230107265305833,
+       0.08170522604204314
+      ],
+      "lineage_novel": [
+       0.6113277613323089,
+       0.6992726395991417
+      ]
+     }
+    }
+   }
+  },
+  "E19": {
+   "train_tps": [
+    "10hpf",
+    "12hpf",
+    "14hpf",
+    "16hpf",
+    "19hpf"
+   ],
+   "test_tps": [
+    "24hpf",
+    "2dpf",
+    "3dpf",
+    "5dpf",
+    "10dpf"
+   ],
+   "train_cutoff_hpf": 19.0,
+   "test_min_hpf": 24.0,
+   "interpolation_control": false,
+   "n_train": 24008,
+   "n_test": 96436,
+   "n_train_clusters": 30,
+   "n_test_clusters": 51,
+   "n_shared_clusters": 30,
+   "majority_lineage": 0.33752955327885853,
+   "majority_cluster_shared": 0.0998173724460678,
+   "models": {
+    "STATE SE-600M": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 96436,
+      "accuracy": 0.7705524907710813,
+      "balanced_accuracy": 0.7414955097164931,
+      "macro_f1": 0.6764631158891002
+     },
+     "cluster_shared": {
+      "n": 87610,
+      "accuracy": 0.05106722976829129,
+      "balanced_accuracy": 0.04900995078491836,
+      "macro_f1": 0.044358044472881615
+     },
+     "lineage_on_novel_clusters": {
+      "n": 8826,
+      "accuracy": 0.7118740086109223,
+      "balanced_accuracy": 0.7347227184752998,
+      "macro_f1": 0.6515549549374995
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 8826,
+      "accuracy": 0.370382959438024,
+      "balanced_accuracy": 0.30375679716189213,
+      "macro_f1": 0.17788249211561188
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6970698284659118,
+      "24hpf": 0.9275205203654948,
+      "2dpf": 0.7483691790996577,
+      "3dpf": 0.86850887731945,
+      "5dpf": 0.6755913074798895
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7788377784229955,
+       "15": 0.7705524907710813,
+       "30": 0.7527583060267949
+      },
+      "cluster_shared": {
+       "5": 0.045771030704257504,
+       "15": 0.05106722976829129,
+       "30": 0.05138682798767264
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.7251314312573852,
+       0.8178706793970165
+      ],
+      "cluster_shared": [
+       0.041231288006366454,
+       0.06155656271375545
+      ],
+      "lineage_novel": [
+       0.6837502055790668,
+       0.7340817795096254
+      ]
+     }
+    },
+    "TranscriptFormer": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 96436,
+      "accuracy": 0.8485005599568626,
+      "balanced_accuracy": 0.8173506823009813,
+      "macro_f1": 0.7693611284492048
+     },
+     "cluster_shared": {
+      "n": 87610,
+      "accuracy": 0.039059468097249174,
+      "balanced_accuracy": 0.03657034309132796,
+      "macro_f1": 0.03252067038085784
+     },
+     "lineage_on_novel_clusters": {
+      "n": 8826,
+      "accuracy": 0.7956038975753456,
+      "balanced_accuracy": 0.8131549869461028,
+      "macro_f1": 0.7635715497839223
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 8826,
+      "accuracy": 0.2946974847042828,
+      "balanced_accuracy": 0.25663830619522254,
+      "macro_f1": 0.1446064285726191
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.7853637202973905,
+      "24hpf": 0.9475762738113676,
+      "2dpf": 0.8555189562746238,
+      "3dpf": 0.9060650558447916,
+      "5dpf": 0.7931724496738304
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.8440312746277324,
+       "15": 0.8485005599568626,
+       "30": 0.8497863868264963
+      },
+      "cluster_shared": {
+       "5": 0.03378609747745691,
+       "15": 0.039059468097249174,
+       "30": 0.043077274283757565
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.8200975409912444,
+       0.8770269109661858
+      ],
+      "cluster_shared": [
+       0.02920766973490055,
+       0.05107604744812933
+      ],
+      "lineage_novel": [
+       0.7592185976229837,
+       0.8318945269828971
+      ]
+     }
+    },
+    "Geneformer V1": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 96436,
+      "accuracy": 0.7424198432120784,
+      "balanced_accuracy": 0.606063727885316,
+      "macro_f1": 0.5976942802407765
+     },
+     "cluster_shared": {
+      "n": 87610,
+      "accuracy": 0.05372674352242895,
+      "balanced_accuracy": 0.04075952139327676,
+      "macro_f1": 0.03420966040712244
+     },
+     "lineage_on_novel_clusters": {
+      "n": 8826,
+      "accuracy": 0.6101291638341264,
+      "balanced_accuracy": 0.6372203723078661,
+      "macro_f1": 0.5604499893752072
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 8826,
+      "accuracy": 0.2944708814865171,
+      "balanced_accuracy": 0.24028926738267345,
+      "macro_f1": 0.13110552186035848
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6671364011856747,
+      "24hpf": 0.8753291002013319,
+      "2dpf": 0.7147193696312084,
+      "3dpf": 0.8680194010590486,
+      "5dpf": 0.6399327650378197
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7285038782197519,
+       "15": 0.7424198432120784,
+       "30": 0.7428553652163092
+      },
+      "cluster_shared": {
+       "5": 0.04588517292546513,
+       "15": 0.05372674352242895,
+       "30": 0.056785755050793287
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.6946116050812099,
+       0.7910546077155841
+      ],
+      "cluster_shared": [
+       0.03862796336711544,
+       0.0700816972126303
+      ],
+      "lineage_novel": [
+       0.5760897622308964,
+       0.6391593514736124
+      ]
+     }
+    },
+    "PCA-50": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 96436,
+      "accuracy": 0.31969389024845496,
+      "balanced_accuracy": 0.09944118372972181,
+      "macro_f1": 0.06022578818515695
+     },
+     "cluster_shared": {
+      "n": 87610,
+      "accuracy": 0.0521287524255222,
+      "balanced_accuracy": 0.0333226778950981,
+      "macro_f1": 0.031168467824467652
+     },
+     "lineage_on_novel_clusters": {
+      "n": 8826,
+      "accuracy": 0.27475640154090186,
+      "balanced_accuracy": 0.10042135636490065,
+      "macro_f1": 0.05580572582293938
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 8826,
+      "accuracy": 0.2418989349648765,
+      "balanced_accuracy": 0.10312676947921348,
+      "macro_f1": 0.060354026915303303
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.31697361387822537,
+      "24hpf": 0.3986371379897785,
+      "2dpf": 0.28392430407543756,
+      "3dpf": 0.5303252792239577,
+      "5dpf": 0.11385920678752952
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.2897465676718238,
+       "15": 0.31969389024845496,
+       "30": 0.32487867601310716
+      },
+      "cluster_shared": {
+       "5": 0.047916904462960846,
+       "15": 0.0521287524255222,
+       "30": 0.05687706882775939
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.24524320966961694,
+       0.396918442205982
+      ],
+      "cluster_shared": [
+       0.049624152982642944,
+       0.054899907662856975
+      ],
+      "lineage_novel": [
+       0.1925211249683558,
+       0.3516785968736144
+      ]
+     }
+    },
+    "Harmony": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 96436,
+      "accuracy": 0.3029885105147455,
+      "balanced_accuracy": 0.09968713807120914,
+      "macro_f1": 0.06853139881669863
+     },
+     "cluster_shared": {
+      "n": 87610,
+      "accuracy": 0.05152379865312179,
+      "balanced_accuracy": 0.0339912421313907,
+      "macro_f1": 0.03212138228091217
+     },
+     "lineage_on_novel_clusters": {
+      "n": 8826,
+      "accuracy": 0.2590074779061863,
+      "balanced_accuracy": 0.09971258906327177,
+      "macro_f1": 0.0615946241750855
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 8826,
+      "accuracy": 0.24144572852934512,
+      "balanced_accuracy": 0.0999667542998703,
+      "macro_f1": 0.05874899471535354
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.30069488313329124,
+      "24hpf": 0.37625832429921013,
+      "2dpf": 0.2696505845120455,
+      "3dpf": 0.4947715035820763,
+      "5dpf": 0.11517989354464321
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.2819901281679041,
+       "15": 0.3029885105147455,
+       "30": 0.3015264009291136
+      },
+      "cluster_shared": {
+       "5": 0.04885287067686337,
+       "15": 0.05152379865312179,
+       "30": 0.05411482707453487
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.23441433922978008,
+       0.37271720905696154
+      ],
+      "cluster_shared": [
+       0.048634679185270126,
+       0.054945552185262536
+      ],
+      "lineage_novel": [
+       0.18402212308958463,
+       0.3299518210661854
+      ]
+     }
+    },
+    "scVI": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 96436,
+      "accuracy": 0.7381372101704757,
+      "balanced_accuracy": 0.758263994201526,
+      "macro_f1": 0.6436869447886859
+     },
+     "cluster_shared": {
+      "n": 87610,
+      "accuracy": 0.03520146102043146,
+      "balanced_accuracy": 0.03755458852414232,
+      "macro_f1": 0.028521131975058827
+     },
+     "lineage_on_novel_clusters": {
+      "n": 8826,
+      "accuracy": 0.7020167686381147,
+      "balanced_accuracy": 0.7198819358404916,
+      "macro_f1": 0.6264708227303853
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 8826,
+      "accuracy": 0.39723544074325856,
+      "balanced_accuracy": 0.31842222352272903,
+      "macro_f1": 0.19242793686129778
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6407016861849458,
+      "24hpf": 0.945717825615611,
+      "2dpf": 0.7845378802557644,
+      "3dpf": 0.8339785520402261,
+      "5dpf": 0.5961499979989595
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7400452113318677,
+       "15": 0.7381372101704757,
+       "30": 0.7352233605707412
+      },
+      "cluster_shared": {
+       "5": 0.034550850359548,
+       "15": 0.03520146102043146,
+       "30": 0.034996005022257734
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.6792762666538585,
+       0.7985211624372494
+      ],
+      "cluster_shared": [
+       0.0292731032719158,
+       0.04141545157748907
+      ],
+      "lineage_novel": [
+       0.6614802412478692,
+       0.736046455957972
+      ]
+     }
+    },
+    "UCE": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 96436,
+      "accuracy": 0.7323302501140653,
+      "balanced_accuracy": 0.6648232177537884,
+      "macro_f1": 0.6318806517336479
+     },
+     "cluster_shared": {
+      "n": 87610,
+      "accuracy": 0.05144389909827645,
+      "balanced_accuracy": 0.04644918465637208,
+      "macro_f1": 0.0432339530644871
+     },
+     "lineage_on_novel_clusters": {
+      "n": 8826,
+      "accuracy": 0.6701790165420349,
+      "balanced_accuracy": 0.698708600644518,
+      "macro_f1": 0.6165507151196318
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 8826,
+      "accuracy": 0.3780874688420576,
+      "balanced_accuracy": 0.29543206045651044,
+      "macro_f1": 0.1798837538836458
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6623256718013509,
+      "24hpf": 0.8943007588663466,
+      "2dpf": 0.7238907188529354,
+      "3dpf": 0.8135540426289325,
+      "5dpf": 0.6384519950374195
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.726087768053424,
+       "15": 0.7323302501140653,
+       "30": 0.7286801609357502
+      },
+      "cluster_shared": {
+       "5": 0.04760872046570026,
+       "15": 0.05144389909827645,
+       "30": 0.05257390708823194
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.6875069998917154,
+       0.7767741155103431
+      ],
+      "cluster_shared": [
+       0.04027712433460466,
+       0.06450262237276307
+      ],
+      "lineage_novel": [
+       0.6206632986523579,
+       0.7165032812799387
+      ]
+     }
+    }
+   }
+  },
+  "E24": {
+   "train_tps": [
+    "10hpf",
+    "12hpf",
+    "14hpf",
+    "16hpf",
+    "19hpf",
+    "24hpf"
+   ],
+   "test_tps": [
+    "2dpf",
+    "3dpf",
+    "5dpf",
+    "10dpf"
+   ],
+   "train_cutoff_hpf": 24.0,
+   "test_min_hpf": 48.0,
+   "interpolation_control": false,
+   "n_train": 36922,
+   "n_test": 83522,
+   "n_train_clusters": 33,
+   "n_test_clusters": 51,
+   "n_shared_clusters": 33,
+   "majority_lineage": 0.3240703048298652,
+   "majority_cluster_shared": 0.09773223021025594,
+   "models": {
+    "STATE SE-600M": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 83522,
+      "accuracy": 0.8042910849835971,
+      "balanced_accuracy": 0.7787493686602477,
+      "macro_f1": 0.7160331808251621
+     },
+     "cluster_shared": {
+      "n": 77477,
+      "accuracy": 0.05679104766575887,
+      "balanced_accuracy": 0.049644634886426536,
+      "macro_f1": 0.03421123806830366
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.7212572373862697,
+      "balanced_accuracy": 0.7347713656262342,
+      "macro_f1": 0.6242206263442577
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.6370554177005789,
+      "balanced_accuracy": 0.557634651280438,
+      "macro_f1": 0.5152381269064206
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.7666553282472424,
+      "2dpf": 0.8166376025318091,
+      "3dpf": 0.8999688515107017,
+      "5dpf": 0.7415856245247529
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7990828763679031,
+       "15": 0.8042910849835971,
+       "30": 0.7998012499700677
+      },
+      "cluster_shared": {
+       "5": 0.05380951766330653,
+       "15": 0.05679104766575887,
+       "30": 0.05835280147656724
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.7678966359393378,
+       0.8437275144633469
+      ],
+      "cluster_shared": [
+       0.04721144968205555,
+       0.06771602602114953
+      ],
+      "lineage_novel": [
+       0.6703335328593195,
+       0.7687580647109736
+      ]
+     }
+    },
+    "TranscriptFormer": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 83522,
+      "accuracy": 0.828775651924044,
+      "balanced_accuracy": 0.8356447095094737,
+      "macro_f1": 0.7636127137246401
+     },
+     "cluster_shared": {
+      "n": 77477,
+      "accuracy": 0.027053189978961497,
+      "balanced_accuracy": 0.022756197124272716,
+      "macro_f1": 0.01835588128377965
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.753349875930521,
+      "balanced_accuracy": 0.720627081414904,
+      "macro_f1": 0.6688222978173928
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.6671629445822994,
+      "balanced_accuracy": 0.6021313738407488,
+      "macro_f1": 0.5524168501375162
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.7697652947179163,
+      "2dpf": 0.8827100691080539,
+      "3dpf": 0.8937836514929026,
+      "5dpf": 0.7854884539960779
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.8147673666818324,
+       "15": 0.828775651924044,
+       "30": 0.8363904121069897
+      },
+      "cluster_shared": {
+       "5": 0.027311331104714946,
+       "15": 0.027053189978961497,
+       "30": 0.021193386424358196
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.7985160584145927,
+       0.8623481504289635
+      ],
+      "cluster_shared": [
+       0.0154386072037747,
+       0.04020981911251409
+      ],
+      "lineage_novel": [
+       0.6948348337065675,
+       0.8088420372758288
+      ]
+     }
+    },
+    "Geneformer V1": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 83522,
+      "accuracy": 0.7551543305955317,
+      "balanced_accuracy": 0.6298404661251811,
+      "macro_f1": 0.6185071981610454
+     },
+     "cluster_shared": {
+      "n": 77477,
+      "accuracy": 0.04023129444867509,
+      "balanced_accuracy": 0.03044955332090073,
+      "macro_f1": 0.018012322306522176
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.6481389578163772,
+      "balanced_accuracy": 0.6153783396227522,
+      "macro_f1": 0.551647931922953
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.5488833746898263,
+      "balanced_accuracy": 0.4700903222776366,
+      "macro_f1": 0.4332480950458195
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.708683609504835,
+      "2dpf": 0.7647742685526061,
+      "3dpf": 0.8777644284252214,
+      "5dpf": 0.6771921399127546
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7393501113479083,
+       "15": 0.7551543305955317,
+       "30": 0.7578841502837576
+      },
+      "cluster_shared": {
+       "5": 0.039986060379209314,
+       "15": 0.04023129444867509,
+       "30": 0.040566877912154575
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.710812737746554,
+       0.8020770829859826
+      ],
+      "cluster_shared": [
+       0.02958331738083843,
+       0.05150382532548135
+      ],
+      "lineage_novel": [
+       0.6018554045969037,
+       0.6934194624815758
+      ]
+     }
+    },
+    "PCA-50": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 83522,
+      "accuracy": 0.30254304255166303,
+      "balanced_accuracy": 0.09985137852116299,
+      "macro_f1": 0.06115549179291031
+     },
+     "cluster_shared": {
+      "n": 77477,
+      "accuracy": 0.05223485679621049,
+      "balanced_accuracy": 0.03035373768785295,
+      "macro_f1": 0.02664434274050348
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.28866832092638545,
+      "balanced_accuracy": 0.1002744207583727,
+      "macro_f1": 0.05904014713763529
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.2491315136476427,
+      "balanced_accuracy": 0.09636384767989835,
+      "macro_f1": 0.06522984031455574
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.31473832547742847,
+      "2dpf": 0.2804366078925273,
+      "3dpf": 0.5204912561740755,
+      "5dpf": 0.11017729219193981
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.2533943152702282,
+       "15": 0.30254304255166303,
+       "30": 0.3151744450563923
+      },
+      "cluster_shared": {
+       "5": 0.04532958168230572,
+       "15": 0.05223485679621049,
+       "30": 0.05830117325141655
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.22090814447395296,
+       0.38507990030287104
+      ],
+      "cluster_shared": [
+       0.048850134360357116,
+       0.05673524484302001
+      ],
+      "lineage_novel": [
+       0.2149065643967739,
+       0.3547214896031738
+      ]
+     }
+    },
+    "Harmony": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 83522,
+      "accuracy": 0.2933718062306937,
+      "balanced_accuracy": 0.10033098124974152,
+      "macro_f1": 0.06551627701323504
+     },
+     "cluster_shared": {
+      "n": 77477,
+      "accuracy": 0.05187345922015566,
+      "balanced_accuracy": 0.03007986202974357,
+      "macro_f1": 0.026587174989987552
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.2817204301075269,
+      "balanced_accuracy": 0.10168075461068152,
+      "macro_f1": 0.06401596108054758
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.24284532671629447,
+      "balanced_accuracy": 0.09299786979324391,
+      "macro_f1": 0.06293274481101482
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.3051168667087808,
+      "2dpf": 0.2749467157527611,
+      "3dpf": 0.5001112446046366,
+      "5dpf": 0.10917677192139913
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.25091592634276,
+       "15": 0.2933718062306937,
+       "30": 0.3004837048921242
+      },
+      "cluster_shared": {
+       "5": 0.04518760406314132,
+       "15": 0.05187345922015566,
+       "30": 0.05543580675555326
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.215600722593394,
+       0.3715489124510243
+      ],
+      "cluster_shared": [
+       0.04846524254325313,
+       0.05636861794816395
+      ],
+      "lineage_novel": [
+       0.21087876455979573,
+       0.34178845427107407
+      ]
+     }
+    },
+    "scVI": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 83522,
+      "accuracy": 0.8526136826225426,
+      "balanced_accuracy": 0.8071099778022225,
+      "macro_f1": 0.7626062013550603
+     },
+     "cluster_shared": {
+      "n": 77477,
+      "accuracy": 0.04326445267627812,
+      "balanced_accuracy": 0.03747740806969673,
+      "macro_f1": 0.027671189717855538
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.777667493796526,
+      "balanced_accuracy": 0.723983409618019,
+      "macro_f1": 0.6831383845449609
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.6246484698097602,
+      "balanced_accuracy": 0.5260640077675139,
+      "macro_f1": 0.5026745388019407
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.8061616210700229,
+      "2dpf": 0.8810308079829491,
+      "3dpf": 0.8961420371112001,
+      "5dpf": 0.834113739144355
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.8517636071933143,
+       "15": 0.8526136826225426,
+       "30": 0.8482794952228155
+      },
+      "cluster_shared": {
+       "5": 0.04096699665707242,
+       "15": 0.04326445267627812,
+       "30": 0.04341933735173019
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.8286288046686572,
+       0.8756334213703167
+      ],
+      "cluster_shared": [
+       0.03422891604511883,
+       0.05320183383439063
+      ],
+      "lineage_novel": [
+       0.7427834903499481,
+       0.8101881579766305
+      ]
+     }
+    },
+    "UCE": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 83522,
+      "accuracy": 0.7061971696080075,
+      "balanced_accuracy": 0.6771637113033493,
+      "macro_f1": 0.6324935478317522
+     },
+     "cluster_shared": {
+      "n": 77477,
+      "accuracy": 0.042180259948113634,
+      "balanced_accuracy": 0.03742632845454837,
+      "macro_f1": 0.03262139466529515
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.6843672456575682,
+      "balanced_accuracy": 0.6587201098749216,
+      "macro_f1": 0.5892738454663567
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.5708850289495451,
+      "balanced_accuracy": 0.4920849903705336,
+      "macro_f1": 0.44933960833776226
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6461441275086253,
+      "2dpf": 0.7519214622489182,
+      "3dpf": 0.80781382102968,
+      "5dpf": 0.635930683955657
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7050956634180215,
+       "15": 0.7061971696080075,
+       "30": 0.7041737506285769
+      },
+      "cluster_shared": {
+       "5": 0.04211572466667527,
+       "15": 0.042180259948113634,
+       "30": 0.04254165752416846
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.661229296175309,
+       0.7511509118535084
+      ],
+      "cluster_shared": [
+       0.03248515514744376,
+       0.052451111989458704
+      ],
+      "lineage_novel": [
+       0.6189566999817628,
+       0.7432534867990047
+      ]
+     }
+    }
+   }
+  },
+  "E72": {
+   "train_tps": [
+    "10hpf",
+    "12hpf",
+    "14hpf",
+    "16hpf",
+    "19hpf",
+    "24hpf",
+    "2dpf",
+    "3dpf"
+   ],
+   "test_tps": [
+    "5dpf",
+    "10dpf"
+   ],
+   "train_cutoff_hpf": 72.0,
+   "test_min_hpf": 120.0,
+   "interpolation_control": false,
+   "n_train": 74878,
+   "n_test": 45566,
+   "n_train_clusters": 45,
+   "n_test_clusters": 51,
+   "n_shared_clusters": 45,
+   "majority_lineage": 0.3436553570644779,
+   "majority_cluster_shared": 0.09375069325820264,
+   "models": {
+    "STATE SE-600M": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 45566,
+      "accuracy": 0.9497651757889655,
+      "balanced_accuracy": 0.911575760406812,
+      "macro_f1": 0.9159598432261499
+     },
+     "cluster_shared": {
+      "n": 45077,
+      "accuracy": 0.014308849302304945,
+      "balanced_accuracy": 0.015135986420509598,
+      "macro_f1": 0.01713040260253238
+     },
+     "lineage_on_novel_clusters": {
+      "n": 489,
+      "accuracy": 0.8507157464212679,
+      "balanced_accuracy": 0.5960231065875231,
+      "macro_f1": 0.4585995685408248
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 489,
+      "accuracy": 0.5541922290388548,
+      "balanced_accuracy": 0.26588171806103966,
+      "macro_f1": 0.1933220198865746
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.9516983332523447,
+      "5dpf": 0.9481730499859927
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9495457139094939,
+       "15": 0.9497651757889655,
+       "30": 0.9460782162138437
+      },
+      "cluster_shared": {
+       "5": 0.014131375202431394,
+       "15": 0.014308849302304945,
+       "30": 0.014264480777336557
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.9397376539517358,
+       0.9590254371646119
+      ],
+      "cluster_shared": [
+       0.011945104869906758,
+       0.01646358183376178
+      ],
+      "lineage_novel": [
+       0.599009900990099,
+       0.9170041127075145
+      ]
+     }
+    },
+    "TranscriptFormer": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 45566,
+      "accuracy": 0.942566826142299,
+      "balanced_accuracy": 0.8873755204516864,
+      "macro_f1": 0.908134706136528
+     },
+     "cluster_shared": {
+      "n": 45077,
+      "accuracy": 0.011513632229296538,
+      "balanced_accuracy": 0.014191030365570134,
+      "macro_f1": 0.014755148609998865
+     },
+     "lineage_on_novel_clusters": {
+      "n": 489,
+      "accuracy": 0.8609406952965235,
+      "balanced_accuracy": 0.6170943674992871,
+      "macro_f1": 0.45487538831921104
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 489,
+      "accuracy": 0.5071574642126789,
+      "balanced_accuracy": 0.20221913097572983,
+      "macro_f1": 0.18445042531640704
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.9479080616162107,
+      "5dpf": 0.9381678472805859
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9426326647061405,
+       "15": 0.942566826142299,
+       "30": 0.9403063687837423
+      },
+      "cluster_shared": {
+       "5": 0.010470971892539432,
+       "15": 0.011513632229296538,
+       "30": 0.011802027641591056
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.9306830536207179,
+       0.9538916706900594
+      ],
+      "cluster_shared": [
+       0.005684061931047283,
+       0.01929787329441248
+      ],
+      "lineage_novel": [
+       0.6137851217554188,
+       0.9192580413808035
+      ]
+     }
+    },
+    "Geneformer V1": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 45566,
+      "accuracy": 0.8704077601720581,
+      "balanced_accuracy": 0.7283648580939704,
+      "macro_f1": 0.7549409850970005
+     },
+     "cluster_shared": {
+      "n": 45077,
+      "accuracy": 0.024003372007897598,
+      "balanced_accuracy": 0.013251482367038478,
+      "macro_f1": 0.010591082755965204
+     },
+     "lineage_on_novel_clusters": {
+      "n": 489,
+      "accuracy": 0.6809815950920245,
+      "balanced_accuracy": 0.41973824726323883,
+      "macro_f1": 0.3355403459788767
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 489,
+      "accuracy": 0.5501022494887525,
+      "balanced_accuracy": 0.1938440226141001,
+      "macro_f1": 0.17399824330259112
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.8890616648039263,
+      "5dpf": 0.8550446232040662
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.8577448097265505,
+       "15": 0.8704077601720581,
+       "30": 0.8724707018390906
+      },
+      "cluster_shared": {
+       "5": 0.020653548372784346,
+       "15": 0.024003372007897598,
+       "30": 0.02551190185682277
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.8531536739427678,
+       0.8907585870252274
+      ],
+      "cluster_shared": [
+       0.016914809934686966,
+       0.03067061596900978
+      ],
+      "lineage_novel": [
+       0.40406119714115546,
+       0.7817258490778227
+      ]
+     }
+    },
+    "PCA-50": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 45566,
+      "accuracy": 0.2193082561559057,
+      "balanced_accuracy": 0.10093798808515526,
+      "macro_f1": 0.05406186035524678
+     },
+     "cluster_shared": {
+      "n": 45077,
+      "accuracy": 0.04842824500299488,
+      "balanced_accuracy": 0.02281887767300185,
+      "macro_f1": 0.020989681695386734
+     },
+     "lineage_on_novel_clusters": {
+      "n": 489,
+      "accuracy": 0.5725971370143149,
+      "balanced_accuracy": 0.09697105844471901,
+      "macro_f1": 0.08541054302817053
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 489,
+      "accuracy": 0.5337423312883436,
+      "balanced_accuracy": 0.091171169614391,
+      "macro_f1": 0.08359051007304802
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.3318431410661354,
+      "5dpf": 0.1266258454396286
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.21063951191678004,
+       "15": 0.2193082561559057,
+       "30": 0.21421674055216608
+      },
+      "cluster_shared": {
+       "5": 0.03968764558422255,
+       "15": 0.04842824500299488,
+       "30": 0.053752467999201366
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.15459868510363994,
+       0.2982502348515436
+      ],
+      "cluster_shared": [
+       0.04405227464109274,
+       0.0543250240490995
+      ],
+      "lineage_novel": [
+       0.22075619416044948,
+       0.6591996492563018
+      ]
+     }
+    },
+    "Harmony": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 45566,
+      "accuracy": 0.21777202299960496,
+      "balanced_accuracy": 0.10113153522595927,
+      "macro_f1": 0.055238348512735916
+     },
+     "cluster_shared": {
+      "n": 45077,
+      "accuracy": 0.04778490139095326,
+      "balanced_accuracy": 0.022171907971559827,
+      "macro_f1": 0.02023237763420284
+     },
+     "lineage_on_novel_clusters": {
+      "n": 489,
+      "accuracy": 0.5501022494887525,
+      "balanced_accuracy": 0.1922385712681119,
+      "macro_f1": 0.10033503283402893
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 489,
+      "accuracy": 0.5214723926380368,
+      "balanced_accuracy": 0.09086415699692124,
+      "macro_f1": 0.08513040712468192
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.3283444287866271,
+      "5dpf": 0.12670588706127187
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.21129789755519465,
+       "15": 0.21777202299960496,
+       "30": 0.21140762849493044
+      },
+      "cluster_shared": {
+       "5": 0.038511879672560284,
+       "15": 0.04778490139095326,
+       "30": 0.05408523193646427
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.15503504112685915,
+       0.29469349576227033
+      ],
+      "cluster_shared": [
+       0.043421165488479,
+       0.05352949529244047
+      ],
+      "lineage_novel": [
+       0.2126416137054435,
+       0.6321824949244303
+      ]
+     }
+    },
+    "scVI": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 45566,
+      "accuracy": 0.9563709783610587,
+      "balanced_accuracy": 0.9308480909010614,
+      "macro_f1": 0.9246531890622519
+     },
+     "cluster_shared": {
+      "n": 45077,
+      "accuracy": 0.009317390243361359,
+      "balanced_accuracy": 0.012091052664434741,
+      "macro_f1": 0.013947864431145951
+     },
+     "lineage_on_novel_clusters": {
+      "n": 489,
+      "accuracy": 0.8670756646216768,
+      "balanced_accuracy": 0.7163108373149931,
+      "macro_f1": 0.5933268529300111
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 489,
+      "accuracy": 0.5480572597137015,
+      "balanced_accuracy": 0.22671505139437303,
+      "macro_f1": 0.21809188861820444
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.9587929442635696,
+      "5dpf": 0.9543762756633449
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9556467541588026,
+       "15": 0.9563709783610587,
+       "30": 0.9556248079708555
+      },
+      "cluster_shared": {
+       "5": 0.009783259755529428,
+       "15": 0.009317390243361359,
+       "30": 0.009051179093551034
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.9456643125700398,
+       0.9664020619244266
+      ],
+      "cluster_shared": [
+       0.007751211870103174,
+       0.011482549430575757
+      ],
+      "lineage_novel": [
+       0.6105943039814008,
+       0.9349368931265484
+      ]
+     }
+    },
+    "UCE": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 45566,
+      "accuracy": 0.9044462976780934,
+      "balanced_accuracy": 0.8085611231402838,
+      "macro_f1": 0.8349600727345734
+     },
+     "cluster_shared": {
+      "n": 45077,
+      "accuracy": 0.017214987687734322,
+      "balanced_accuracy": 0.013808716108765492,
+      "macro_f1": 0.015015267218421356
+     },
+     "lineage_on_novel_clusters": {
+      "n": 489,
+      "accuracy": 0.721881390593047,
+      "balanced_accuracy": 0.4630052538535635,
+      "macro_f1": 0.37395203589691095
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 489,
+      "accuracy": 0.6134969325153374,
+      "balanced_accuracy": 0.34253299809629134,
+      "macro_f1": 0.21767341316476174
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.9278876524612469,
+      "5dpf": 0.8851402729419298
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9010446385462845,
+       "15": 0.9044462976780934,
+       "30": 0.9011104771101259
+      },
+      "cluster_shared": {
+       "5": 0.017969252612196906,
+       "15": 0.017214987687734322,
+       "30": 0.01637198571333496
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.88457735789858,
+       0.9249897524769558
+      ],
+      "cluster_shared": [
+       0.014528212542845106,
+       0.01976517658093059
+      ],
+      "lineage_novel": [
+       0.45555555555555555,
+       0.800015455950541
+      ]
+     }
+    }
+   }
+  },
+  "I19": {
+   "train_tps": [
+    "10hpf",
+    "12hpf",
+    "14hpf",
+    "16hpf",
+    "24hpf"
+   ],
+   "test_tps": [
+    "19hpf"
+   ],
+   "train_cutoff_hpf": 24.0,
+   "test_min_hpf": 19.0,
+   "interpolation_control": true,
+   "n_train": 31023,
+   "n_test": 5899,
+   "n_train_clusters": 33,
+   "n_test_clusters": 29,
+   "n_shared_clusters": 29,
+   "majority_lineage": 0.5802678420071199,
+   "majority_cluster_shared": 0.0913714188845567,
+   "models": {
+    "STATE SE-600M": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 5899,
+      "accuracy": 0.9647397864044753,
+      "balanced_accuracy": 0.8689793190846267,
+      "macro_f1": 0.8977365263236725
+     },
+     "cluster_shared": {
+      "n": 5899,
+      "accuracy": 0.06526529920325479,
+      "balanced_accuracy": 0.03679637416421794,
+      "macro_f1": 0.028598036306644203
+     },
+     "lineage_on_novel_clusters": {
+      "n": 0
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 0
+     },
+     "accuracy_lineage_per_timepoint": {
+      "19hpf": 0.9647397864044753
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9659264282081709,
+       "15": 0.9647397864044753,
+       "30": 0.9613493812510595
+      },
+      "cluster_shared": {
+       "5": 0.06153585353449737,
+       "15": 0.06526529920325479,
+       "30": 0.06679098152229192
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.9616220130340333,
+       0.9674848581447243
+      ],
+      "cluster_shared": [
+       0.05737490175530521,
+       0.07973102785782901
+      ],
+      "lineage_novel": [
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "TranscriptFormer": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 5899,
+      "accuracy": 0.9840650957789456,
+      "balanced_accuracy": 0.9394514576476164,
+      "macro_f1": 0.9528378095715869
+     },
+     "cluster_shared": {
+      "n": 5899,
+      "accuracy": 0.06543481946092558,
+      "balanced_accuracy": 0.03957129869412163,
+      "macro_f1": 0.025491033313493235
+     },
+     "lineage_on_novel_clusters": {
+      "n": 0
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 0
+     },
+     "accuracy_lineage_per_timepoint": {
+      "19hpf": 0.9840650957789456
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9850822173249704,
+       "15": 0.9840650957789456,
+       "30": 0.9823698932022377
+      },
+      "cluster_shared": {
+       "5": 0.061027292761485,
+       "15": 0.06543481946092558,
+       "30": 0.06763858281064587
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.9817483189241114,
+       0.9855257556406982
+      ],
+      "cluster_shared": [
+       0.056850930049777315,
+       0.08117195004803074
+      ],
+      "lineage_novel": [
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Geneformer V1": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 89421,
+      "accuracy": 0.7638697845025217,
+      "balanced_accuracy": 0.639600380437277,
+      "macro_f1": 0.6317626408391006
+     },
+     "cluster_shared": {
+      "n": 83376,
+      "accuracy": 0.04519286125503742,
+      "balanced_accuracy": 0.031795653114858935,
+      "macro_f1": 0.020572831630169635
+     },
+     "lineage_on_novel_clusters": {
+      "n": 6045,
+      "accuracy": 0.6449958643507031,
+      "balanced_accuracy": 0.6057886493513838,
+      "macro_f1": 0.5424795782159119
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 6045,
+      "accuracy": 0.5748552522746071,
+      "balanced_accuracy": 0.5280983614385727,
+      "macro_f1": 0.4619704741056546
+     },
+     "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.7037271004421983,
+      "19hpf": 0.9277843702322428,
+      "2dpf": 0.7639346379900536,
+      "3dpf": 0.8746495794953945,
+      "5dpf": 0.6750310161283868
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.7485266324465171,
+       "15": 0.7638697845025217,
+       "30": 0.7663300566980911
+      },
+      "cluster_shared": {
+       "5": 0.043357800805987334,
+       "15": 0.04519286125503742,
+       "30": 0.04594847438111687
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.7216810496842918,
+       0.81188497148805
+      ],
+      "cluster_shared": [
+       0.032760899074304885,
+       0.057990596310517464
+      ],
+      "lineage_novel": [
+       0.6026538020086083,
+       0.6856963720452993
+      ]
+     }
+    },
+    "PCA-50": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 5899,
+      "accuracy": 0.5014409221902018,
+      "balanced_accuracy": 0.10221148192796203,
+      "macro_f1": 0.09028021636570463
+     },
+     "cluster_shared": {
+      "n": 5899,
+      "accuracy": 0.05238175962027462,
+      "balanced_accuracy": 0.0353204846271024,
+      "macro_f1": 0.029019437405720345
+     },
+     "lineage_on_novel_clusters": {
+      "n": 0
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 0
+     },
+     "accuracy_lineage_per_timepoint": {
+      "19hpf": 0.5014409221902018
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.39481268011527376,
+       "15": 0.5014409221902018,
+       "30": 0.5375487370740804
+      },
+      "cluster_shared": {
+       "5": 0.044753348025089,
+       "15": 0.05238175962027462,
+       "30": 0.05407696219698254
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.4823159549384333,
+       0.5365033621517772
+      ],
+      "cluster_shared": [
+       0.0468600573796621,
+       0.05865314989138305
+      ],
+      "lineage_novel": [
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "Harmony": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 5899,
+      "accuracy": 0.4577046957111375,
+      "balanced_accuracy": 0.10590949547009516,
+      "macro_f1": 0.1021331047788617
+     },
+     "cluster_shared": {
+      "n": 5899,
+      "accuracy": 0.05763688760806916,
+      "balanced_accuracy": 0.03690192215385864,
+      "macro_f1": 0.03193742474599678
+     },
+     "lineage_on_novel_clusters": {
+      "n": 0
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 0
+     },
+     "accuracy_lineage_per_timepoint": {
+      "19hpf": 0.4577046957111375
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.38650618748940496,
+       "15": 0.4577046957111375,
+       "30": 0.454822851330734
+      },
+      "cluster_shared": {
+       "5": 0.050686557043566706,
+       "15": 0.05763688760806916,
+       "30": 0.05645024580437362
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.4477338223735918,
+       0.4759846301633045
+      ],
+      "cluster_shared": [
+       0.05387312719158432,
+       0.06495940037476577
+      ],
+      "lineage_novel": [
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "scVI": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 5899,
+      "accuracy": 0.9860993388709951,
+      "balanced_accuracy": 0.9629340156338035,
+      "macro_f1": 0.9609828948292053
+     },
+     "cluster_shared": {
+      "n": 5899,
+      "accuracy": 0.056958806577386,
+      "balanced_accuracy": 0.03255659149425588,
+      "macro_f1": 0.0222879087351524
+     },
+     "lineage_on_novel_clusters": {
+      "n": 0
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 0
+     },
+     "accuracy_lineage_per_timepoint": {
+      "19hpf": 0.9860993388709951
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9849126970672996,
+       "15": 0.9860993388709951,
+       "30": 0.9872859806746906
+      },
+      "cluster_shared": {
+       "5": 0.05543312425834887,
+       "15": 0.056958806577386,
+       "30": 0.05678928631971521
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.9855177407675597,
+       0.986733538262417
+      ],
+      "cluster_shared": [
+       0.04995374653098982,
+       0.06772334293948126
+      ],
+      "lineage_novel": [
+       0.0,
+       0.0
+      ]
+     }
+    },
+    "UCE": {
+     "adaptation": "frozen",
+     "lineage_all": {
+      "n": 5899,
+      "accuracy": 0.9432107136802848,
+      "balanced_accuracy": 0.781856548385437,
+      "macro_f1": 0.8233436791106696
+     },
+     "cluster_shared": {
+      "n": 5899,
+      "accuracy": 0.08374300728937108,
+      "balanced_accuracy": 0.045136543927228163,
+      "macro_f1": 0.030012811314323193
+     },
+     "lineage_on_novel_clusters": {
+      "n": 0
+     },
+     "lineage_via_predicted_cluster_on_novel": {
+      "n": 0
+     },
+     "accuracy_lineage_per_timepoint": {
+      "19hpf": 0.9432107136802848
+     },
+     "k_sensitivity": {
+      "lineage": {
+       "5": 0.9404983895575522,
+       "15": 0.9432107136802848,
+       "30": 0.9418545516189185
+      },
+      "cluster_shared": {
+       "5": 0.07814883878623495,
+       "15": 0.08374300728937108,
+       "30": 0.089506696050178
+      }
+     },
+     "bootstrap95_by_fish": {
+      "lineage_all": [
+       0.9390009606147934,
+       0.9462352511859871
+      ],
+      "cluster_shared": [
+       0.07388001047943411,
+       0.10182516810758886
+      ],
+      "lineage_novel": [
+       0.0,
+       0.0
+      ]
+     }
+    }
+   }
+  }
+ },
+ "runtime_s": 177.6
+}

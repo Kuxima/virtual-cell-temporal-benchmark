@@ -1,0 +1,11 @@
+Model,Adaptation,Input genes,Summary statistic,Lineage acc (95% CI),"Cluster acc, shared (95% CI)",Lineage acc on novel clusters (95% CI),Balanced acc (lineage),Macro F1 (lineage)
+Majority class,-,-,fixed baseline,0.352,0.100,-,-,-
+PCA-50,frozen,"2,581",single run,"0.497 [0.402,0.605]","0.046 [0.032,0.059]","0.372 [0.317,0.433]",0.483,0.483
+Harmony,transductive,"2,581",single run,"0.711 [0.671,0.759]","0.042 [0.030,0.056]","0.571 [0.537,0.612]",0.671,0.593
+scVI (frozen),frozen,"2,581",3-seed mean ± SD,0.715 ± 0.001,0.043 ± 0.002,0.633 ± 0.016,NA,NA
+"scVI (surgery, unfrozen)",query-training,"2,581",3-seed mean ± SD,0.757 ± 0.028,0.058 ± 0.009,0.675 ± 0.010,NA,NA
+STATE SE-600M,frozen,"2,058 / 2,581",single run,"0.710 [0.658,0.766]","0.069 [0.051,0.088]","0.673 [0.648,0.696]",0.657,0.582
+UCE (4-layer),frozen,"2,468 / 2,581",single run,"0.725 [0.687,0.768]","0.061 [0.042,0.082]","0.657 [0.611,0.699]",0.636,0.593
+Geneformer V1-10M,frozen,"2,454 ENSG",single run,"0.726 [0.684,0.773]","0.063 [0.046,0.082]","0.606 [0.560,0.639]",0.600,0.578
+TranscriptFormer tf-metazoa,frozen,"3,816 ENSDARG",single run,"0.864 [0.839,0.891]","0.040 [0.029,0.055]","0.798 [0.765,0.828]",0.810,0.774
+TranscriptFormer (gene-set control),frozen,"2,994 ENSDARG",single run,"0.869 [0.844,0.894]","0.043 [0.032,0.058]","0.796 [0.767,0.827]",0.814,0.777

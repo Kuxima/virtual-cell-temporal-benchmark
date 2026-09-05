@@ -1,0 +1,21 @@
+{
+  "model": "scVI/scANVI (temporal extrapolation)",
+  "train_timepoints": "10-16hpf",
+  "test_timepoints": "19hpf-10dpf",
+  "n_train": 18109,
+  "n_test": 102335,
+  "label": "lineage",
+  "accuracy": 0.9267308350026873,
+  "balanced_accuracy": 0.8684878535413303,
+  "macro_f1": 0.8901078436291943,
+  "novel_types": [],
+  "runtime_s": 1044.4,
+  "accuracy_per_timepoint": {
+    "10dpf": 0.9153020069002381,
+    "19hpf": 0.9815222919138837,
+    "24hpf": 0.9487378039337153,
+    "2dpf": 0.8907834399018278,
+    "3dpf": 0.9574600631869354,
+    "5dpf": 0.9064713651098572
+  }
+}

@@ -1,0 +1,8 @@
+Model,kNN lineage,Linear-probe lineage,kNN cluster (shared),Linear-probe cluster (shared),kNN novel-lineage,Linear-probe novel-lineage
+PCA-50,0.497,0.649,0.046,0.163,0.372,0.552
+Harmony,0.711,0.626,0.042,0.134,0.571,0.551
+scVI (frozen),0.715,0.768,0.043,0.152,0.633,0.603
+STATE SE-600M,0.71,0.554,0.069,0.197,0.673,0.431
+UCE,0.725,0.689,0.061,0.188,0.657,0.56
+Geneformer V1,0.726,0.757,0.063,0.135,0.606,0.598
+TranscriptFormer,0.864,0.518,0.04,0.198,0.798,0.39

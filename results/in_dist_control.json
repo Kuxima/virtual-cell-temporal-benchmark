@@ -1,0 +1,143 @@
+{
+  "X_state_dim": 2058,
+  "n_genes_ortholog": 2581,
+  "split_check": {
+    "n_train": 18109,
+    "n_test": 102335,
+    "train_timepoints": [
+      "10hpf",
+      "12hpf",
+      "14hpf",
+      "16hpf"
+    ],
+    "test_timepoints": [
+      "10dpf",
+      "19hpf",
+      "24hpf",
+      "2dpf",
+      "3dpf",
+      "5dpf"
+    ],
+    "fish_overlap": [],
+    "lineage_train_missing_in_test": [],
+    "lineage_test_missing_in_train": [],
+    "n_cluster_train": 29,
+    "n_cluster_test": 51,
+    "n_cluster_novel": 22
+  },
+  "cluster_global_check": {
+    "frac_clusters_in_ge2_timepoints": 0.9215686274509803,
+    "n_clusters": 51
+  },
+  "novel_cluster_timepoint_counts": {
+    "10dpf": 3069,
+    "3dpf": 2786,
+    "5dpf": 2274,
+    "2dpf": 1455,
+    "24hpf": 244,
+    "19hpf": 25
+  },
+  "majority_cluster_shared_subset": 0.10038710235505288,
+  "in_dist_control": {
+    "10dpf": {
+      "n": 20579,
+      "n_cluster": 51,
+      "cluster_majority": 0.12026823460809563,
+      "cluster_state_acc": 0.8965014577259475,
+      "cluster_state_bacc": 0.8897122189742935,
+      "cluster_pca_acc": 0.923955296404276,
+      "lineage_state_acc": 0.9686588921282799
+    },
+    "10hpf": {
+      "n": 1251,
+      "n_cluster": 13,
+      "cluster_majority": 0.13589128697042366,
+      "cluster_state_acc": 0.9442231075697212,
+      "cluster_state_bacc": 0.9283853185433202,
+      "cluster_pca_acc": 0.9760956175298805,
+      "lineage_state_acc": 0.9601593625498008
+    },
+    "12hpf": {
+      "n": 6699,
+      "n_cluster": 24,
+      "cluster_majority": 0.09598447529482013,
+      "cluster_state_acc": 0.9149253731343283,
+      "cluster_state_bacc": 0.8864717198740806,
+      "cluster_pca_acc": 0.9574626865671642,
+      "lineage_state_acc": 0.9477611940298507
+    },
+    "14hpf": {
+      "n": 3862,
+      "n_cluster": 25,
+      "cluster_majority": 0.12532366649404453,
+      "cluster_state_acc": 0.9482535575679172,
+      "cluster_state_bacc": 0.921465708839622,
+      "cluster_pca_acc": 0.9663648124191462,
+      "lineage_state_acc": 0.9495472186287193
+    },
+    "16hpf": {
+      "n": 6297,
+      "n_cluster": 29,
+      "cluster_majority": 0.10592345561378434,
+      "cluster_state_acc": 0.9071428571428571,
+      "cluster_state_bacc": 0.8809878202652209,
+      "cluster_pca_acc": 0.9547619047619048,
+      "lineage_state_acc": 0.9206349206349206
+    },
+    "19hpf": {
+      "n": 5899,
+      "n_cluster": 29,
+      "cluster_majority": 0.0913714188845567,
+      "cluster_state_acc": 0.8940677966101694,
+      "cluster_state_bacc": 0.8943212794368494,
+      "cluster_pca_acc": 0.9466101694915254,
+      "lineage_state_acc": 0.9737288135593221
+    },
+    "24hpf": {
+      "n": 12914,
+      "n_cluster": 32,
+      "cluster_majority": 0.09083165556760105,
+      "cluster_state_acc": 0.9070847851335656,
+      "cluster_state_bacc": 0.8862708484604259,
+      "cluster_pca_acc": 0.943089430894309,
+      "lineage_state_acc": 0.9516066589237321
+    },
+    "2dpf": {
+      "n": 15483,
+      "n_cluster": 43,
+      "cluster_majority": 0.09306981851062456,
+      "cluster_state_acc": 0.897965773329028,
+      "cluster_state_bacc": 0.8763356954165236,
+      "cluster_pca_acc": 0.9283177268324184,
+      "lineage_state_acc": 0.9438165967064901
+    },
+    "3dpf": {
+      "n": 22473,
+      "n_cluster": 43,
+      "cluster_majority": 0.08476838873314645,
+      "cluster_state_acc": 0.9377085650723026,
+      "cluster_state_bacc": 0.939086918277546,
+      "cluster_pca_acc": 0.9528364849833147,
+      "lineage_state_acc": 0.9906562847608453
+    },
+    "5dpf": {
+      "n": 24987,
+      "n_cluster": 47,
+      "cluster_majority": 0.07007643974866931,
+      "cluster_state_acc": 0.9247699079631853,
+      "cluster_state_bacc": 0.9277453303133318,
+      "cluster_pca_acc": 0.9503801520608244,
+      "lineage_state_acc": 0.9669867947178872
+    }
+  },
+  "ood_auroc_global": 0.6594636178971295,
+  "ood_auroc_per_timepoint": {
+    "10dpf": 0.5669000667867674,
+    "19hpf": 0.7644399046646237,
+    "24hpf": 0.49046912805517096,
+    "2dpf": 0.7127832454874248,
+    "3dpf": 0.5597005373871368,
+    "5dpf": 0.5456639522478516
+  },
+  "runtime_s": 32.7
+}

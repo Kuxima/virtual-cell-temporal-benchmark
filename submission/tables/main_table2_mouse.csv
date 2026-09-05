@@ -1,0 +1,7 @@
+Model,Adaptation,Input genes,Summary statistic,Lineage acc (95% CI),"Cluster acc, shared (95% CI)",Lineage acc on novel clusters (95% CI),Balanced acc (lineage),Macro F1 (lineage)
+Majority class,-,-,fixed baseline,0.266,0.117,-,-,-
+PCA-50,frozen,"4,000 ENSMUSG",single run,"0.687 [0.624,0.760]","0.069 [0.040,0.101]","0.647 [0.565,0.755]",0.664,0.562
+Harmony,transductive,"4,000 ENSMUSG",single run,"0.657 [0.596,0.730]","0.064 [0.035,0.095]","0.612 [0.532,0.715]",0.622,0.557
+scVI (query-unfrozen),query-training,"4,000 ENSMUSG",3-seed mean ± SD,0.644 ± 0.018,0.073 ± 0.016,0.571 ± 0.032,NA,NA
+UCE (4-layer),frozen,"3,268 / 4,000 ENSMUSG (via MGI symbols)",single run,"0.638 [0.589,0.698]","0.062 [0.043,0.083]","0.588 [0.515,0.670]",0.517,0.474
+TranscriptFormer tf-metazoa,frozen,"3,687 / 4,000 ENSMUSG",single run,"0.657 [0.599,0.724]","0.071 [0.043,0.102]","0.597 [0.523,0.695]",0.575,0.517

@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Heavy data and weights (see data/README.md)
+data/raw/*
+data/processed/*
+models/*
+external/
+
+# Run logs (results/*.log provenance notes are kept intentionally)
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

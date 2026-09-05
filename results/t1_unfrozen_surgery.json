@@ -1,0 +1,100 @@
+{
+  "protocol": "scVI surgery fully-unfrozen (freeze_expression=False, freeze_decoder_first_layer=False, freeze_dropout=False), 30ep query training, x3 seeds",
+  "note": "默认 scArches surgery 与 frozen 逐位相同（见 11c 诊断），不单列",
+  "seeds": [
+    42,
+    0,
+    1
+  ],
+  "summary": {
+    "lineage_all": {
+      "mean": 0.7573101415286395,
+      "std": 0.02843211816715156,
+      "per_seed": [
+        0.7495773684467679,
+        0.7270044461816583,
+        0.7953486099574926
+      ]
+    },
+    "cluster_shared": {
+      "mean": 0.05816987810240551,
+      "std": 0.00863651794016015,
+      "per_seed": [
+        0.0576977141497805,
+        0.06897558443805281,
+        0.047836335719383234
+      ]
+    },
+    "lineage_on_novel_clusters": {
+      "mean": 0.6749213437531716,
+      "std": 0.01019678277284598,
+      "per_seed": [
+        0.6745153760276058,
+        0.6876078351771034,
+        0.6626408200548056
+      ]
+    }
+  },
+  "s42": {
+    "adaptation": "query-training-unfrozen",
+    "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7495773684467679,
+      "balanced_accuracy": 0.6786823286085476,
+      "macro_f1": 0.6265642975189809
+    },
+    "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.0576977141497805,
+      "balanced_accuracy": 0.03889134262913291,
+      "macro_f1": 0.030432307139539434
+    },
+    "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.6745153760276058,
+      "balanced_accuracy": 0.6370550326437895,
+      "macro_f1": 0.6008829544168067
+    },
+    "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.45468385263371563,
+      "balanced_accuracy": 0.41844178287120315,
+      "macro_f1": 0.3234830939691851
+    },
+    "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6458039749258954,
+      "19hpf": 0.9560942532632649,
+      "24hpf": 0.8895772030354654,
+      "2dpf": 0.675579668022993,
+      "3dpf": 0.8349130067191741,
+      "5dpf": 0.6830351782927122
+    },
+    "k_sensitivity": {
+      "lineage": {
+        "5": 0.741662187912249,
+        "15": 0.7495773684467679,
+        "30": 0.7525773195876289
+      },
+      "cluster_shared": {
+        "5": 0.05556756990549512,
+        "15": 0.0576977141497805,
+        "30": 0.05886550896390649
+      }
+    },
+    "bootstrap95_by_fish": {
+      "lineage_all": [
+        0.7092850467948018,
+        0.7948972446293436
+      ],
+      "cluster_shared": [
+        0.0443482179219119,
+        0.07610107495512708
+      ],
+      "lineage_novel": [
+        0.6541455393827018,
+        0.6963074611039747
+      ]
+    }
+  },
+  "runtime_s": 729.3
+}

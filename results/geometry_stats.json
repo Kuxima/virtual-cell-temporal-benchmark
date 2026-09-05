@@ -1,0 +1,61 @@
+{
+  "protocol": "original embedding space; one-sided permutation (B=1000, seed 42) on train-vs-late centroid displacement; drift index = mean cosine distance(late->train k=15) / within-train kNN baseline",
+  "models": {
+    "PCA-50": {
+      "centroid_disp_original": 23.7511,
+      "arrow_len_umap": 14.479,
+      "perm_p": 0.001,
+      "d_late_to_train_knn": 0.2367,
+      "d_within_train_knn": 0.1059,
+      "drift_index": 2.235
+    },
+    "Harmony": {
+      "centroid_disp_original": 5.5847,
+      "arrow_len_umap": 4.017,
+      "perm_p": 0.001,
+      "d_late_to_train_knn": 0.187,
+      "d_within_train_knn": 0.1095,
+      "drift_index": 1.707
+    },
+    "scVI (seed 42)": {
+      "centroid_disp_original": 3.8995,
+      "arrow_len_umap": 13.461,
+      "perm_p": 0.001,
+      "d_late_to_train_knn": 0.3368,
+      "d_within_train_knn": 0.1047,
+      "drift_index": 3.218
+    },
+    "STATE SE-600M": {
+      "centroid_disp_original": 0.5904,
+      "arrow_len_umap": 13.34,
+      "perm_p": 0.001,
+      "d_late_to_train_knn": 0.225,
+      "d_within_train_knn": 0.0536,
+      "drift_index": 4.196
+    },
+    "UCE": {
+      "centroid_disp_original": 0.4456,
+      "arrow_len_umap": 5.932,
+      "perm_p": 0.001,
+      "d_late_to_train_knn": 0.2265,
+      "d_within_train_knn": 0.0494,
+      "drift_index": 4.582
+    },
+    "Geneformer V1": {
+      "centroid_disp_original": 3.4745,
+      "arrow_len_umap": 8.398,
+      "perm_p": 0.001,
+      "d_late_to_train_knn": 0.0637,
+      "d_within_train_knn": 0.0166,
+      "drift_index": 3.83
+    },
+    "TranscriptFormer": {
+      "centroid_disp_original": 9.0681,
+      "arrow_len_umap": 14.496,
+      "perm_p": 0.001,
+      "d_late_to_train_knn": 0.1898,
+      "d_within_train_knn": 0.0113,
+      "drift_index": 16.762
+    }
+  }
+}

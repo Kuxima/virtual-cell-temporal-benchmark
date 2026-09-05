@@ -1,0 +1,192 @@
+{
+  "majority_lineage": 0.35152196218302634,
+  "majority_cluster": 0.09072164948453608,
+  "n_train_cluster": 29,
+  "n_test_cluster": 51,
+  "n_novel_cluster": 22,
+  "PCA": {
+    "model": "PCA-50 + kNN",
+    "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.45511310890702106,
+      "balanced_accuracy": 0.45178078219242057,
+      "macro_f1": 0.45852743733759355
+    },
+    "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.04570619147509786,
+      "balanced_accuracy": 0.049052191562691534,
+      "macro_f1": 0.03139593289614357
+    },
+    "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.3568456307723536,
+      "balanced_accuracy": 0.3689236521897593,
+      "macro_f1": 0.378332312253434
+    },
+    "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.15244088094996447,
+      "balanced_accuracy": 0.19347097249288148,
+      "macro_f1": 0.15922937225129816
+    },
+    "n_test_shared_cluster": 92482,
+    "n_test_novel_cluster": 9853,
+    "frac_novel_cluster_cells": 0.09628181951434016,
+    "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.15690752709072356,
+      "19hpf": 0.9745719613493813,
+      "24hpf": 0.927443085024005,
+      "2dpf": 0.5457598656591099,
+      "3dpf": 0.42842522137676325,
+      "5dpf": 0.30179693440589106
+    },
+    "accuracy_cluster_shared_per_timepoint": {
+      "10dpf": 0.017475728155339806,
+      "19hpf": 0.0755873340143003,
+      "24hpf": 0.08626677190213101,
+      "2dpf": 0.044054747647562016,
+      "3dpf": 0.007060496774521257,
+      "5dpf": 0.07163298551490337
+    }
+  },
+  "Harmony": {
+    "model": "Harmony + kNN",
+    "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.724737382127327,
+      "balanced_accuracy": 0.6884008176384194,
+      "macro_f1": 0.6133773065326804
+    },
+    "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.04021323068272745,
+      "balanced_accuracy": 0.03281411139829085,
+      "macro_f1": 0.026704066936371774
+    },
+    "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.5792144524510301,
+      "balanced_accuracy": 0.628651216033188,
+      "macro_f1": 0.5635365434606345
+    },
+    "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.29107885923069116,
+      "balanced_accuracy": 0.37381231169166973,
+      "macro_f1": 0.2761249356409758
+    },
+    "n_test_shared_cluster": 92482,
+    "n_test_novel_cluster": 9853,
+    "frac_novel_cluster_cells": 0.09628181951434016,
+    "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6251518538315759,
+      "19hpf": 0.965078826919817,
+      "24hpf": 0.9251974601207992,
+      "2dpf": 0.7345475683007169,
+      "3dpf": 0.6898500422729498,
+      "5dpf": 0.6717092888301917
+    },
+    "accuracy_cluster_shared_per_timepoint": {
+      "10dpf": 0.005311250713877784,
+      "19hpf": 0.08154579502894109,
+      "24hpf": 0.07971586424625099,
+      "2dpf": 0.041060735671514116,
+      "3dpf": 0.01366383908162747,
+      "5dpf": 0.0568837229780302
+    }
+  },
+  "scVI": {
+    "model": "scVI unsupervised + kNN",
+    "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7208286509991694,
+      "balanced_accuracy": 0.7343782405878903,
+      "macro_f1": 0.6000581176493519
+    },
+    "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.03720724032784758,
+      "balanced_accuracy": 0.032861538231422245,
+      "macro_f1": 0.026464907745250225
+    },
+    "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.6749213437531716,
+      "balanced_accuracy": 0.6768738662487085,
+      "macro_f1": 0.5895345427737979
+    },
+    "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.34162184106363547,
+      "balanced_accuracy": 0.4336366985399617,
+      "macro_f1": 0.28892679244375447
+    },
+    "n_test_shared_cluster": 92482,
+    "n_test_novel_cluster": 9853,
+    "frac_novel_cluster_cells": 0.09628181951434016,
+    "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6175227173332037,
+      "19hpf": 0.9740634005763689,
+      "24hpf": 0.9299984512931702,
+      "2dpf": 0.7304785894206549,
+      "3dpf": 0.79028167133894,
+      "5dpf": 0.569576179613399
+    },
+    "accuracy_cluster_shared_per_timepoint": {
+      "10dpf": 0.021302113078241005,
+      "19hpf": 0.08001361933946204,
+      "24hpf": 0.08429360694554065,
+      "2dpf": 0.035357855717137156,
+      "3dpf": 0.011124092040432772,
+      "5dpf": 0.03588253423149738
+    }
+  },
+  "STATE": {
+    "model": "STATE SE-600M + kNN",
+    "lineage_all": {
+      "n": 102335,
+      "accuracy": 0.7099721502907119,
+      "balanced_accuracy": 0.6565618009687171,
+      "macro_f1": 0.5824219681361107
+    },
+    "cluster_shared": {
+      "n": 92482,
+      "accuracy": 0.06939728812093164,
+      "balanced_accuracy": 0.053114395733610424,
+      "macro_f1": 0.04892951703561847
+    },
+    "lineage_on_novel_clusters": {
+      "n": 9853,
+      "accuracy": 0.6730944889881254,
+      "balanced_accuracy": 0.6431701427381229,
+      "macro_f1": 0.5740551252531344
+    },
+    "lineage_via_predicted_cluster_on_novel": {
+      "n": 9853,
+      "accuracy": 0.3559322033898305,
+      "balanced_accuracy": 0.41658619308156497,
+      "macro_f1": 0.3099171788976044
+    },
+    "n_test_shared_cluster": 92482,
+    "n_test_novel_cluster": 9853,
+    "frac_novel_cluster_cells": 0.09628181951434016,
+    "accuracy_lineage_per_timepoint": {
+      "10dpf": 0.6253948199620973,
+      "19hpf": 0.9513476860484827,
+      "24hpf": 0.8977853492333902,
+      "2dpf": 0.6709294064457793,
+      "3dpf": 0.7901036799715214,
+      "5dpf": 0.5777004042101893
+    },
+    "accuracy_cluster_shared_per_timepoint": {
+      "10dpf": 0.0173043974871502,
+      "19hpf": 0.08052434456928839,
+      "24hpf": 0.09447513812154697,
+      "2dpf": 0.1122754491017964,
+      "3dpf": 0.028140397216437244,
+      "5dpf": 0.10196803592656188
+    }
+  },
+  "runtime_s": 426.2
+}

@@ -1,0 +1,25 @@
+name: biomni_lab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - biomni==0.0.8
+      - arc-state==0.11.1
+      - scanpy==1.11.5
+      - anndata==0.12.19
+      - scvi-tools==1.4.2
+      - harmony-pytorch==0.1.8
+      - numpy==2.4.6
+      - scipy==1.17.1
+      - pandas==2.3.3
+      - scikit-learn==1.9.0
+      - matplotlib==3.11.1
+      - seaborn==0.13.2
+      - h5py==3.16.0
+      - safetensors==0.8.0
+      - omegaconf==2.3.1
+      - torch==2.11.0+cu128
+# Install the CUDA wheel from https://download.pytorch.org/whl/cu128 when needed.
+# The exact Windows snapshot is biomni_lab.lock.txt.

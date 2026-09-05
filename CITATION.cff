@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the manuscript (DOI to be added at publication)."
+title: "Virtual-cell foundation models under temporal extrapolation: a two-embryo benchmark"
+version: 1.0.0
+date-released: "2026-09-05"
+license: MIT
+authors:
+  - family-names: "[Family]"
+    given-names: "[Given]"
+    affiliation: "[Institution]"
+keywords:
+  - virtual cell
+  - single-cell transcriptomics
+  - temporal extrapolation
+  - developmental atlas
+  - foundation model
+  - benchmark

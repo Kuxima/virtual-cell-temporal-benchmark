@@ -1,0 +1,125 @@
+{
+  "protocol": "multinomial logistic regression (StandardScaler + LogisticRegression, lbfgs, max_iter=5000, seed 42) fitted on train cells only; identical embedding caches and label masks as the kNN protocol",
+  "models": {
+    "PCA-50": {
+      "lineage_all": {
+        "accuracy": 0.6494845360824743,
+        "balanced_accuracy": 0.5034743309184556,
+        "macro_f1": 0.49351097328003696
+      },
+      "lineage_on_novel_clusters": {
+        "accuracy": 0.5520146148381204,
+        "balanced_accuracy": 0.49439321896811494,
+        "macro_f1": 0.46497226378469775
+      },
+      "cluster_shared": {
+        "accuracy": 0.1630783698492644,
+        "balanced_accuracy": 0.13485834960753576,
+        "macro_f1": 0.15620971169091605
+      }
+    },
+    "Harmony": {
+      "lineage_all": {
+        "accuracy": 0.6257585381345581,
+        "balanced_accuracy": 0.5142217764936536,
+        "macro_f1": 0.48914566397965914
+      },
+      "lineage_on_novel_clusters": {
+        "accuracy": 0.550796711661423,
+        "balanced_accuracy": 0.5206089830257907,
+        "macro_f1": 0.43721983895210076
+      },
+      "cluster_shared": {
+        "accuracy": 0.13424238862113552,
+        "balanced_accuracy": 0.10426447067066749,
+        "macro_f1": 0.11098009636652645
+      }
+    },
+    "scVI (seed 42)": {
+      "lineage_all": {
+        "accuracy": 0.7683001905506425,
+        "balanced_accuracy": 0.5755417729915504,
+        "macro_f1": 0.5742274954364336
+      },
+      "lineage_on_novel_clusters": {
+        "accuracy": 0.6025575966710647,
+        "balanced_accuracy": 0.575709906344246,
+        "macro_f1": 0.5282749745846756
+      },
+      "cluster_shared": {
+        "accuracy": 0.1524898047761572,
+        "balanced_accuracy": 0.11430740205001869,
+        "macro_f1": 0.12074837991826193
+      }
+    },
+    "STATE SE-600M": {
+      "lineage_all": {
+        "accuracy": 0.5535056432305663,
+        "balanced_accuracy": 0.5567879749304265,
+        "macro_f1": 0.4795397723318523
+      },
+      "lineage_on_novel_clusters": {
+        "accuracy": 0.43083324875672385,
+        "balanced_accuracy": 0.47713973263934245,
+        "macro_f1": 0.4221062147570679
+      },
+      "cluster_shared": {
+        "accuracy": 0.19740304364731306,
+        "balanced_accuracy": 0.16965595114686366,
+        "macro_f1": 0.1813012044326144
+      }
+    },
+    "UCE": {
+      "lineage_all": {
+        "accuracy": 0.6888356867152001,
+        "balanced_accuracy": 0.5761731017196902,
+        "macro_f1": 0.5376864415642727
+      },
+      "lineage_on_novel_clusters": {
+        "accuracy": 0.5596265096924794,
+        "balanced_accuracy": 0.575752037611074,
+        "macro_f1": 0.5196576516564851
+      },
+      "cluster_shared": {
+        "accuracy": 0.1876734996518704,
+        "balanced_accuracy": 0.16278967974629535,
+        "macro_f1": 0.17084878205721593
+      }
+    },
+    "Geneformer V1": {
+      "lineage_all": {
+        "accuracy": 0.7572873405970587,
+        "balanced_accuracy": 0.6140228605925919,
+        "macro_f1": 0.5979899624225562
+      },
+      "lineage_on_novel_clusters": {
+        "accuracy": 0.5977874758956663,
+        "balanced_accuracy": 0.5903536274759238,
+        "macro_f1": 0.5566834426503605
+      },
+      "cluster_shared": {
+        "accuracy": 0.13481205523053413,
+        "balanced_accuracy": 0.1133801673692201,
+        "macro_f1": 0.12206077266002174
+      }
+    },
+    "TranscriptFormer": {
+      "lineage_all": {
+        "accuracy": 0.5176723506131822,
+        "balanced_accuracy": 0.523955796246468,
+        "macro_f1": 0.49819928203281155
+      },
+      "lineage_on_novel_clusters": {
+        "accuracy": 0.38962752461179334,
+        "balanced_accuracy": 0.4421154920884196,
+        "macro_f1": 0.40291863937853156
+      },
+      "cluster_shared": {
+        "accuracy": 0.1983253610149108,
+        "balanced_accuracy": 0.16466935084383086,
+        "macro_f1": 0.18290641659455187
+      }
+    }
+  },
+  "runtime_s": 1109.4
+}
