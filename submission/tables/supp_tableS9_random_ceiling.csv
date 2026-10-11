@@ -1,9 +1,0 @@
-Model,Time-split lineage acc,Random-split lineage acc,Lineage delta (random - time),Time-split cluster acc (shared),Random-split cluster acc (shared),Cluster delta (random - time)
-PCA-50,0.497,0.971,0.474,0.046,0.89,0.844
-Harmony,0.711,0.952,0.241,0.042,0.653,0.61
-scVI,0.716,0.97,0.253,0.041,0.749,0.707
-STATE SE-600M,0.71,0.963,0.253,0.069,0.837,0.767
-TranscriptFormer,0.864,0.972,0.107,0.04,0.853,0.813
-Geneformer V1,0.726,0.908,0.182,0.063,0.592,0.528
-UCE,0.725,0.933,0.208,0.061,0.684,0.622
-Majority class,0.352,0.363,0.011,0.1,0.093,-0.008
