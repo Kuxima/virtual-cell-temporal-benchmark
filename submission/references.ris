@@ -1,0 +1,822 @@
+TY  - JOUR
+AU  - Ahlmann-Eltze, C.
+AU  - Huber, W.
+AU  - Anders, S.
+TI  - Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines
+JO  - Nat Methods
+PY  - 2025
+VL  - 22
+IS  - 8
+SP  - 1657
+EP  - 1661
+DO  - 10.1038/s41592-025-02772-6
+N1  - PMID: 40759747
+ER  - 
+
+TY  - JOUR
+AU  - Bunne, C.
+AU  - Roohani, Y.
+AU  - Rosen, Y.
+AU  - Gupta, A.
+AU  - Zhang, X.
+AU  - Roed, M.
+AU  - Alexandrov, T.
+AU  - AlQuraishi, M.
+AU  - Brennan, P.
+AU  - Burkhardt, D.
+AU  - Califano, A.
+AU  - Cool, J.
+AU  - Dernburg, A.
+AU  - Ewing, K.
+AU  - Fox, E.
+AU  - Haury, M.
+AU  - Herr, A.
+AU  - Horvitz, E.
+AU  - Hsu, P.
+AU  - Jain, V.
+AU  - Johnson, G.
+AU  - Kalil, T.
+AU  - Kelley, D.
+AU  - Kelley, S.
+AU  - Kreshuk, A.
+AU  - Mitchison, T.
+AU  - Otte, S.
+AU  - Shendure, J.
+AU  - Sofroniew, N.
+AU  - Theis, F.
+AU  - Theodoris, C.
+AU  - Upadhyayula, S.
+AU  - Valer, M.
+AU  - Wang, B.
+AU  - Xing, E.
+AU  - Yeung-Levy, S.
+AU  - Zitnik, M.
+AU  - Karaletsos, T.
+AU  - Regev, A.
+AU  - Lundberg, E.
+AU  - Leskovec, J.
+AU  - Quake, S.
+TI  - How to build the virtual cell with artificial intelligence: Priorities and opportunities
+JO  - Cell
+PY  - 2024
+VL  - 187
+IS  - 25
+SP  - 7045
+EP  - 7063
+DO  - 10.1016/j.cell.2024.11.015
+N1  - PMID: 39672099
+ER  - 
+
+TY  - JOUR
+AU  - Cao, J.
+AU  - Spielmann, M.
+AU  - Qiu, X.
+AU  - Huang, X.
+AU  - Ibrahim, D.
+AU  - Hill, A.
+AU  - Zhang, F.
+AU  - Mundlos, S.
+AU  - Christiansen, L.
+AU  - Steemers, F.
+AU  - Trapnell, C.
+AU  - Shendure, J.
+TI  - The single-cell transcriptional landscape of mammalian organogenesis
+JO  - Nature
+PY  - 2019
+VL  - 566
+IS  - 7745
+SP  - 496
+EP  - 502
+DO  - 10.1038/s41586-019-0969-x
+N1  - PMID: 30787437
+ER  - 
+
+TY  - JOUR
+AU  - Cui, H.
+AU  - Wang, C.
+AU  - Maan, H.
+AU  - Pang, K.
+AU  - Luo, F.
+AU  - Duan, N.
+AU  - Wang, B.
+TI  - scGPT: toward building a foundation model for single-cell multi-omics using generative AI
+JO  - Nat Methods
+PY  - 2024
+VL  - 21
+IS  - 8
+SP  - 1470
+EP  - 1480
+DO  - 10.1038/s41592-024-02201-0
+N1  - PMID: 38409223
+ER  - 
+
+TY  - JOUR
+AU  - DenAdel, A.
+AU  - Hughes, M.
+AU  - Thoutam, A.
+AU  - Gupta, A.
+AU  - Navia, A.
+AU  - Fusi, N.
+AU  - Raghavan, S.
+AU  - Winter, P.
+AU  - Amini, A.
+AU  - Crawford, L.
+TI  - Evaluating the role of pretraining dataset size and diversity on single-cell foundation model performance
+JO  - Nat Methods
+PY  - 2026
+VL  - 23
+IS  - 7
+SP  - 1447
+EP  - 1457
+DO  - 10.1038/s41592-026-03120-y
+N1  - PMID: 42265208
+ER  - 
+
+TY  - JOUR
+AU  - Domínguez, C.C.
+AU  - Xu, C.
+AU  - Jarvis, L.
+AU  - Rainbow, D.
+AU  - Wells, S.
+AU  - Gomes, T.
+AU  - Howlett, S.
+AU  - Suchanek, O.
+AU  - Polanski, K.
+AU  - King, H.
+AU  - Mamanova, L.
+AU  - Huang, N.
+AU  - Szabo, P.
+AU  - Richardson, L.
+AU  - Bolt, L.
+AU  - Fasouli, E.
+AU  - Mahbubani, K.
+AU  - Prete, M.
+AU  - Tuck, L.
+AU  - Richoz, N.
+AU  - Tuong, Z.
+AU  - Campos, L.
+AU  - Mousa, H.
+AU  - Needham, E.
+AU  - Pritchard, S.
+AU  - Li, T.
+AU  - Elmentaite, R.
+AU  - Park, J.
+AU  - Rahmani, E.
+AU  - Chen, D.
+AU  - Menon, D.
+AU  - Bayraktar, O.
+AU  - James, L.
+AU  - Meyer, K.
+AU  - Yosef, N.
+AU  - Clatworthy, M.
+AU  - Sims, P.
+AU  - Farber, D.
+AU  - Saeb-Parsy, K.
+AU  - Jones, J.
+AU  - Teichmann, S.
+TI  - Cross-tissue immune cell analysis reveals tissue-specific features in humans
+JO  - Science
+PY  - 2022
+VL  - 376
+IS  - 6594
+SP  - eabl5197
+DO  - 10.1126/science.abl5197
+N1  - PMID: 35549406
+ER  - 
+
+TY  - JOUR
+AU  - Gayoso, A.
+AU  - Lopez, R.
+AU  - Xing, G.
+AU  - Boyeau, P.
+AU  - Valiollah, P.A.V.
+AU  - Hong, J.
+AU  - Wu, K.
+AU  - Jayasuriya, M.
+AU  - Mehlman, E.
+AU  - Langevin, M.
+AU  - Liu, Y.
+AU  - Samaran, J.
+AU  - Misrachi, G.
+AU  - Nazaret, A.
+AU  - Clivio, O.
+AU  - Xu, C.
+AU  - Ashuach, T.
+AU  - Gabitto, M.
+AU  - Lotfollahi, M.
+AU  - Svensson, V.
+AU  - da, V.B.E.
+AU  - Kleshchevnikov, V.
+AU  - Talavera-López, C.
+AU  - Pachter, L.
+AU  - Theis, F.
+AU  - Streets, A.
+AU  - Jordan, M.
+AU  - Regier, J.
+AU  - Yosef, N.
+TI  - A Python library for probabilistic analysis of single-cell omics data
+JO  - Nat Biotechnol
+PY  - 2022
+VL  - 40
+IS  - 2
+SP  - 163
+EP  - 166
+DO  - 10.1038/s41587-021-01206-w
+N1  - PMID: 35132262
+ER  - 
+
+TY  - JOUR
+AU  - Hao, M.
+AU  - Wei, L.
+AU  - Yang, F.
+AU  - Yao, J.
+AU  - Theodoris, C.
+AU  - Wang, B.
+AU  - Li, X.
+AU  - Yang, G.
+AU  - Zhang, X.
+TI  - Current opinions on large cellular models
+JO  - Quant Biol
+PY  - 2024
+VL  - 12
+IS  - 4
+SP  - 433
+EP  - 443
+DO  - 10.1002/qub2.65
+N1  - PMID: 41674875
+ER  - 
+
+TY  - JOUR
+AU  - Huang, K.
+AU  - Zhang, S.
+AU  - Wang, H.
+AU  - Qu, Y.
+AU  - Lu, Y.
+AU  - Roohani, Y.
+AU  - Li, R.
+AU  - Qiu, L.
+AU  - Li, G.
+AU  - Zhang, J.
+AU  - Yin, D.
+AU  - Marwaha, S.
+AU  - Carter, J.
+AU  - Zhou, X.
+AU  - Wheeler, M.
+AU  - Bernstein, J.
+AU  - Wang, M.
+AU  - He, P.
+AU  - Zhou, J.
+AU  - Snyder, M.
+AU  - Cong, L.
+AU  - Regev, A.
+AU  - Leskovec, J.
+TI  - Biomni: A General-Purpose Biomedical AI Agent
+JO  - bioRxiv
+PY  - 2025
+SP  - 2025.05.30.656746
+DO  - 10.1101/2025.05.30.656746
+N1  - PMID: 40501924
+ER  - 
+
+TY  - JOUR
+AU  - Kiselev, V.
+AU  - Andrews, T.
+AU  - Hemberg, M.
+TI  - Challenges in unsupervised clustering of single-cell RNA-seq data
+JO  - Nat Rev Genet
+PY  - 2019
+VL  - 20
+IS  - 5
+SP  - 273
+EP  - 282
+DO  - 10.1038/s41576-018-0088-9
+N1  - PMID: 30617341
+ER  - 
+
+TY  - JOUR
+AU  - Korsunsky, I.
+AU  - Millard, N.
+AU  - Fan, J.
+AU  - Slowikowski, K.
+AU  - Zhang, F.
+AU  - Zhang, F.
+AU  - Wei, K.
+AU  - Baglaenko, Y.
+AU  - Brenner, M.
+AU  - Loh, P.
+AU  - Raychaudhuri, S.
+TI  - Fast, sensitive and accurate integration of single-cell data with Harmony
+JO  - Nat Methods
+PY  - 2019
+VL  - 16
+IS  - 12
+SP  - 1289
+EP  - 1296
+DO  - 10.1038/s41592-019-0619-0
+N1  - PMID: 31740819
+ER  - 
+
+TY  - JOUR
+AU  - La, M.G.
+AU  - Soldatov, R.
+AU  - Zeisel, A.
+AU  - Braun, E.
+AU  - Hochgerner, H.
+AU  - Petukhov, V.
+AU  - Lidschreiber, K.
+AU  - Kastriti, M.
+AU  - Lönnerberg, P.
+AU  - Furlan, A.
+AU  - Fan, J.
+AU  - Borm, L.
+AU  - Liu, Z.
+AU  - van, B.D.
+AU  - Guo, J.
+AU  - He, X.
+AU  - Barker, R.
+AU  - Sundström, E.
+AU  - Castelo-Branco, G.
+AU  - Cramer, P.
+AU  - Adameyko, I.
+AU  - Linnarsson, S.
+AU  - Kharchenko, P.
+TI  - RNA velocity of single cells
+JO  - Nature
+PY  - 2018
+VL  - 560
+IS  - 7719
+SP  - 494
+EP  - 498
+DO  - 10.1038/s41586-018-0414-6
+N1  - PMID: 30089906
+ER  - 
+
+TY  - JOUR
+AU  - Lähnemann, D.
+AU  - Köster, J.
+AU  - Szczurek, E.
+AU  - McCarthy, D.
+AU  - Hicks, S.
+AU  - Robinson, M.
+AU  - Vallejos, C.
+AU  - Campbell, K.
+AU  - Beerenwinkel, N.
+AU  - Mahfouz, A.
+AU  - Pinello, L.
+AU  - Skums, P.
+AU  - Stamatakis, A.
+AU  - Attolini, C.
+AU  - Aparicio, S.
+AU  - Baaijens, J.
+AU  - Balvert, M.
+AU  - Barbanson, B.
+AU  - Cappuccio, A.
+AU  - Corleone, G.
+AU  - Dutilh, B.
+AU  - Florescu, M.
+AU  - Guryev, V.
+AU  - Holmer, R.
+AU  - Jahn, K.
+AU  - Lobo, T.
+AU  - Keizer, E.
+AU  - Khatri, I.
+AU  - Kielbasa, S.
+AU  - Korbel, J.
+AU  - Kozlov, A.
+AU  - Kuo, T.
+AU  - Lelieveldt, B.
+AU  - Mandoiu, I.
+AU  - Marioni, J.
+AU  - Marschall, T.
+AU  - Mölder, F.
+AU  - Niknejad, A.
+AU  - Rączkowska, A.
+AU  - Reinders, M.
+AU  - Ridder, J.
+AU  - Saliba, A.
+AU  - Somarakis, A.
+AU  - Stegle, O.
+AU  - Theis, F.
+AU  - Yang, H.
+AU  - Zelikovsky, A.
+AU  - McHardy, A.
+AU  - Raphael, B.
+AU  - Shah, S.
+AU  - Schönhuth, A.
+TI  - Eleven grand challenges in single-cell data science
+JO  - Genome Biol
+PY  - 2020
+VL  - 21
+IS  - 1
+SP  - 31
+DO  - 10.1186/s13059-020-1926-6
+N1  - PMID: 32033589
+ER  - 
+
+TY  - JOUR
+AU  - Lange, M.
+AU  - Bergen, V.
+AU  - Klein, M.
+AU  - Setty, M.
+AU  - Reuter, B.
+AU  - Bakhti, M.
+AU  - Lickert, H.
+AU  - Ansari, M.
+AU  - Schniering, J.
+AU  - Schiller, H.
+AU  - Pe'er, D.
+AU  - Theis, F.
+TI  - CellRank for directed single-cell fate mapping
+JO  - Nat Methods
+PY  - 2022
+VL  - 19
+IS  - 2
+SP  - 159
+EP  - 170
+DO  - 10.1038/s41592-021-01346-6
+N1  - PMID: 35027767
+ER  - 
+
+TY  - JOUR
+AU  - Lange, M.
+AU  - Granados, A.
+AU  - VijayKumar, S.
+AU  - Bragantini, J.
+AU  - Ancheta, S.
+AU  - Kim, Y.
+AU  - Santhosh, S.
+AU  - Borja, M.
+AU  - Kobayashi, H.
+AU  - McGeever, E.
+AU  - Solak, A.
+AU  - Yang, B.
+AU  - Zhao, X.
+AU  - Liu, Y.
+AU  - Detweiler, A.
+AU  - Paul, S.
+AU  - Theodoro, I.
+AU  - Mekonen, H.
+AU  - Charlton, C.
+AU  - Lao, T.
+AU  - Banks, R.
+AU  - Xiao, S.
+AU  - Xiao, S.
+AU  - Jacobo, A.
+AU  - Balla, K.
+AU  - Awayan, K.
+AU  - D'Souza, S.
+AU  - Haase, R.
+AU  - Dizeux, A.
+AU  - Pourquie, O.
+AU  - Gómez-Sjöberg, R.
+AU  - Huber, G.
+AU  - Serra, M.
+AU  - Neff, N.
+AU  - Pisco, A.
+AU  - Royer, L.
+TI  - A multimodal zebrafish developmental atlas reveals the state-transition dynamics of late-vertebrate pluripotent axial progenitors
+JO  - Cell
+PY  - 2024
+VL  - 187
+IS  - 23
+SP  - 6742
+EP  - 6759.e17
+DO  - 10.1016/j.cell.2024.09.047
+N1  - PMID: 39454574
+ER  - 
+
+TY  - JOUR
+AU  - Lopez, R.
+AU  - Regier, J.
+AU  - Cole, M.
+AU  - Jordan, M.
+AU  - Yosef, N.
+TI  - Deep generative modeling for single-cell transcriptomics
+JO  - Nat Methods
+PY  - 2018
+VL  - 15
+IS  - 12
+SP  - 1053
+EP  - 1058
+DO  - 10.1038/s41592-018-0229-2
+N1  - PMID: 30504886
+ER  - 
+
+TY  - JOUR
+AU  - Lotfollahi, M.
+AU  - Naghipourfar, M.
+AU  - Luecken, M.
+AU  - Khajavi, M.
+AU  - Büttner, M.
+AU  - Wagenstetter, M.
+AU  - Avsec, Ž.
+AU  - Gayoso, A.
+AU  - Yosef, N.
+AU  - Interlandi, M.
+AU  - Rybakov, S.
+AU  - Misharin, A.
+AU  - Theis, F.
+TI  - Mapping single-cell data to reference atlases by transfer learning
+JO  - Nat Biotechnol
+PY  - 2022
+VL  - 40
+IS  - 1
+SP  - 121
+EP  - 130
+DO  - 10.1038/s41587-021-01001-7
+N1  - PMID: 34462589
+ER  - 
+
+TY  - JOUR
+AU  - Luecken, M.
+AU  - Büttner, M.
+AU  - Chaichoompu, K.
+AU  - Danese, A.
+AU  - Interlandi, M.
+AU  - Mueller, M.
+AU  - Strobl, D.
+AU  - Zappia, L.
+AU  - Dugas, M.
+AU  - Colomé-Tatché, M.
+AU  - Theis, F.
+TI  - Benchmarking atlas-level data integration in single-cell genomics
+JO  - Nat Methods
+PY  - 2022
+VL  - 19
+IS  - 1
+SP  - 41
+EP  - 50
+DO  - 10.1038/s41592-021-01336-8
+N1  - PMID: 34949812
+ER  - 
+
+TY  - JOUR
+AU  - Pijuan-Sala, B.
+AU  - Griffiths, J.
+AU  - Guibentif, C.
+AU  - Hiscock, T.
+AU  - Jawaid, W.
+AU  - Calero-Nieto, F.
+AU  - Mulas, C.
+AU  - Ibarra-Soria, X.
+AU  - Tyser, R.
+AU  - Ho, D.
+AU  - Reik, W.
+AU  - Srinivas, S.
+AU  - Simons, B.
+AU  - Nichols, J.
+AU  - Marioni, J.
+AU  - Göttgens, B.
+TI  - A single-cell molecular map of mouse gastrulation and early organogenesis
+JO  - Nature
+PY  - 2019
+VL  - 566
+IS  - 7745
+SP  - 490
+EP  - 495
+DO  - 10.1038/s41586-019-0933-9
+N1  - PMID: 30787436
+ER  - 
+
+TY  - JOUR
+AU  - Pearce, J.
+AU  - Simmonds, S.
+AU  - Mahmoudabadi, G.
+AU  - Krishnan, L.
+AU  - Palla, G.
+AU  - Istrate, A.
+AU  - Tarashansky, A.
+AU  - Nelson, B.
+AU  - Valenzuela, O.
+AU  - Li, D.
+AU  - Quake, S.
+AU  - Karaletsos, T.
+TI  - TranscriptFormer: A generative cell atlas across 1.5 billion years of evolution
+JO  - Science
+PY  - 2026
+VL  - 393
+IS  - 6806
+SP  - aec8514
+DO  - 10.1126/science.aec8514
+N1  - PMID: 42096520
+ER  - 
+
+TY  - JOUR
+AU  - Qiu, P.
+AU  - Chen, Q.
+AU  - Qin, H.
+AU  - Fang, S.
+AU  - Zhang, Y.
+AU  - Zhang, Y.
+AU  - Xia, T.
+AU  - Cao, L.
+AU  - Zhang, Y.
+AU  - Fang, X.
+AU  - Li, Y.
+AU  - Hu, L.
+TI  - BioLLM: A standardized framework for integrating and benchmarking single-cell foundation models
+JO  - Patterns (N Y)
+PY  - 2025
+VL  - 6
+IS  - 8
+SP  - 101326
+DO  - 10.1016/j.patter.2025.101326
+N1  - PMID: 40843339
+ER  - 
+
+TY  - JOUR
+AU  - Roohani, Y.
+AU  - Huang, K.
+AU  - Leskovec, J.
+TI  - Predicting transcriptional outcomes of novel multigene perturbations with GEARS
+JO  - Nat Biotechnol
+PY  - 2024
+VL  - 42
+IS  - 6
+SP  - 927
+EP  - 935
+DO  - 10.1038/s41587-023-01905-6
+N1  - PMID: 37592036
+ER  - 
+
+TY  - JOUR
+AU  - Rosen, Y.
+AU  - Roohani, Y.
+AU  - Agrawal, A.
+AU  - Samotorčan, L.
+AU  - Tabula, S.C.
+AU  - Quake, S.
+AU  - Leskovec, J.
+TI  - Universal cell embedding provides a foundation model for cell biology
+JO  - Nature
+PY  - 2026
+VL  - 656
+IS  - 8126
+SP  - 183
+EP  - 191
+DO  - 10.1038/s41586-026-10689-z
+N1  - PMID: 42420460
+ER  - 
+
+TY  - JOUR
+AU  - Stuart, T.
+AU  - Butler, A.
+AU  - Hoffman, P.
+AU  - Hafemeister, C.
+AU  - Papalexi, E.
+AU  - Mauck, W.
+AU  - Hao, Y.
+AU  - Stoeckius, M.
+AU  - Smibert, P.
+AU  - Satija, R.
+TI  - Comprehensive Integration of Single-Cell Data
+JO  - Cell
+PY  - 2019
+VL  - 177
+IS  - 7
+SP  - 1888
+EP  - 1902.e21
+DO  - 10.1016/j.cell.2019.05.031
+N1  - PMID: 31178118
+ER  - 
+
+TY  - JOUR
+AU  - Theodoris, C.
+AU  - Xiao, L.
+AU  - Chopra, A.
+AU  - Chaffin, M.
+AU  - Al, S.Z.
+AU  - Hill, M.
+AU  - Mantineo, H.
+AU  - Brydon, E.
+AU  - Zeng, Z.
+AU  - Liu, X.
+AU  - Ellinor, P.
+TI  - Transfer learning enables predictions in network biology
+JO  - Nature
+PY  - 2023
+VL  - 618
+IS  - 7965
+SP  - 616
+EP  - 624
+DO  - 10.1038/s41586-023-06139-9
+N1  - PMID: 37258680
+ER  - 
+
+TY  - JOUR
+AU  - Theunissen, L.
+AU  - Mortier, T.
+AU  - Saeys, Y.
+AU  - Waegeman, W.
+TI  - Evaluation of out-of-distribution detection methods for data shifts in single-cell transcriptomics
+JO  - Brief Bioinform
+PY  - 2025
+VL  - 26
+IS  - 3
+SP  - bbaf239
+DO  - 10.1093/bib/bbaf239
+N1  - PMID: 40439669
+ER  - 
+
+TY  - JOUR
+AU  - Wang, Q.
+AU  - Pan, Y.
+AU  - Zhou, M.
+AU  - Tang, Z.
+AU  - Wang, Y.
+AU  - Wang, G.
+AU  - Song, Q.
+TI  - scDrugMap: Benchmarking Large Foundation Models for Drug Response Prediction
+JO  - ArXiv
+PY  - 2025
+SP  - arXiv:2505.05612v1
+DO  - 10.48550/arXiv.2505.05612
+N1  - PMID: 40386575
+ER  - 
+
+TY  - JOUR
+AU  - Wolf, F.
+AU  - Angerer, P.
+AU  - Theis, F.
+TI  - SCANPY: large-scale single-cell gene expression data analysis
+JO  - Genome Biol
+PY  - 2018
+VL  - 19
+IS  - 1
+SP  - 15
+DO  - 10.1186/s13059-017-1382-0
+N1  - PMID: 29409532
+ER  - 
+
+TY  - JOUR
+AU  - Yang, X.
+AU  - Liu, G.
+AU  - Feng, G.
+AU  - Bu, D.
+AU  - Wang, P.
+AU  - Jiang, J.
+AU  - Chen, S.
+AU  - Yang, Q.
+AU  - Miao, H.
+AU  - Zhang, Y.
+AU  - Man, Z.
+AU  - Liang, Z.
+AU  - Wang, Z.
+AU  - Li, Y.
+AU  - Li, Z.
+AU  - Liu, Y.
+AU  - Tian, Y.
+AU  - Liu, W.
+AU  - Li, C.
+AU  - Li, A.
+AU  - Dong, J.
+AU  - Hu, Z.
+AU  - Fang, C.
+AU  - Cui, L.
+AU  - Deng, Z.
+AU  - Jiang, H.
+AU  - Cui, W.
+AU  - Zhang, J.
+AU  - Yang, Z.
+AU  - Li, H.
+AU  - He, X.
+AU  - Zhong, L.
+AU  - Zhou, J.
+AU  - Wang, Z.
+AU  - Long, Q.
+AU  - Xu, P.
+AU  - X-Compass, C.
+AU  - Wang, H.
+AU  - Meng, Z.
+AU  - Wang, X.
+AU  - Wang, Y.
+AU  - Wang, Y.
+AU  - Zhang, S.
+AU  - Guo, J.
+AU  - Zhao, Y.
+AU  - Zhou, Y.
+AU  - Li, F.
+AU  - Liu, J.
+AU  - Chen, Y.
+AU  - Yang, G.
+AU  - Li, X.
+TI  - GeneCompass: deciphering universal gene regulatory mechanisms with a knowledge-informed cross-species foundation model
+JO  - Cell Res
+PY  - 2024
+VL  - 34
+IS  - 12
+SP  - 830
+EP  - 845
+DO  - 10.1038/s41422-024-01034-y
+N1  - PMID: 39375485
+ER  - 
+
+TY  - COMP
+AU  - Arc Institute
+TI  - SE-600M model checkpoint and arc-state inference software (v0.11.1)
+PY  - 2025
+PB  - Arc Institute
+UR  - https://huggingface.co/arcinstitute/SE-600M
+N1  - Software record; frozen benchmark checkpoint
+ER  - 
+
