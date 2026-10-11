@@ -1,3 +1,0 @@
-Error during gene conversion from zebrafish to human: 404 Client Error: Not Found for url: http://www.ensembl.org:80/biomart/martservice?type=configuration&dataset=drerio_gene_ensembl
-Alternative approach also failed: 404 Client Error: Not Found for url: http://www.ensembl.org:80/biomart/martservice?type=configuration&dataset=drerio_gene_ensembl
-Gene conversion results (failed) saved to: zebrafish_to_human_gene_conversion.csv
